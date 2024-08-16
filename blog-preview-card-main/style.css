@@ -22,6 +22,14 @@ main {
    display: flex;
    justify-content: center;
    align-items: center;
+   height: 100vh;
+}
+
+/* The image won't cut on landscape mode.*/
+@media screen and (orientation: landscape) and (max-width: 700px) {
+   main {
+      height: auto;/
+   }
 }
 
 article {
@@ -52,20 +60,20 @@ article>div.content>h2 {
    font-size: .9rem;
 }
 
-article > div.content > p {
+article>div.content>p {
    padding: 12px 0;
    font-size: .875rem;
    line-height: 150%;
    color: var(--gray-500);
 }
 
-article > div.content > h1 {
+article>div.content>h1 {
    color: var(--gray-950);
    line-height: 150%;
    font-size: 1.3rem;
 }
 
-article > span {
+article>span {
    display: flex;
    align-items: center;
    gap: 15px;
@@ -76,7 +84,7 @@ article > span {
    font-weight: 800;
 }
 
-article > span > img {
+article>span>img {
    width: 32px;
    height: 32px;
 }
