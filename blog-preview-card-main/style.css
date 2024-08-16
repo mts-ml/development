@@ -27,7 +27,7 @@ main {
 
 article {
    width: 327px;
-   height: 501px;
+   height: 470px;
    background-color: var(--white);
    padding: 24px;
    border-radius: 20px;
@@ -54,7 +54,7 @@ article>div.content>h2 {
 }
 
 article > div.content > p {
-   padding: 12px 0;
+   padding: 9px 0;
    font-size: .875rem;
    line-height: 150%;
    color: var(--gray-500);
