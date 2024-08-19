@@ -20,9 +20,10 @@
 <body>
   <main>
     <article>
-      <div class="image">
-        <img src="./assets/images/illustration-article-279x167.jpg" alt="Image of a tag">
-      </div>
+      <picture>
+        <source media="(max-width: 992px)" srcset="./assets/images/illustration-article-279x167.jpg" type="image/jpg">
+        <img src="assets/images/illustration-article.svg" alt="Image of a tag" type="image/svg">
+      </picture>
 
       <div class="content">
         <h2>Learning</h2>
@@ -43,10 +44,16 @@
     </article>
   </main>
 
-  <!-- <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer> -->
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer ">Frontend Mentor</a>.
+    </p>
+
+    <p>
+      Coded by <a href="https://www.frontendmentor.io/profile/mts-ml" target="_blank" rel="noopener noreferrer">Mateus Lima</a>.
+    </p>
+  </footer>
+
 </body>
 
 </html>

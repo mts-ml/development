@@ -35,7 +35,29 @@ article {
    box-shadow: 8px 7px black;
 }
 
-div.image>img {
+article>div.content>h1 {
+   color: var(--gray-950);
+   line-height: 150%;
+   font-size: 1.3rem;
+}
+
+@media screen and (min-width: 992px) {
+   main {
+      min-height: 94.3vh;
+   }
+
+   article {
+      width: 384px;
+      height: 522px;
+   }
+
+   article>div.content>h1 {
+      font-size: 1.5rem;
+   }
+}
+
+
+picture>img {
    border-radius: 10px;
 }
 
@@ -60,12 +82,6 @@ article>div.content>p {
    color: var(--gray-500);
 }
 
-article>div.content>h1 {
-   color: var(--gray-950);
-   line-height: 150%;
-   font-size: 1.3rem;
-}
-
 article>span {
    display: flex;
    align-items: center;
@@ -80,4 +96,24 @@ article>span {
 article>span>img {
    width: 32px;
    height: 32px;
+}
+
+footer {
+   margin-top: 10px;
+   text-align: center;
+}
+
+footer > p > a {
+   text-decoration: none;
+   color: var(--white)
+}
+
+footer > p > a::after {
+   content: ' \1F517';
+   color: var(--Slate900);
+}
+
+footer > p > a:hover {
+   text-decoration: underline;
+   text-decoration-color: black;
 }
