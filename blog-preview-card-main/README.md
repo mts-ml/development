@@ -34,7 +34,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### What I learned
 
-Although it's a simple project, I got stuck because my font size wouldn't update in resolutions higher than 992px. This happened because I had set the media query rule for my <h1> before the default one. CSS reads and applies styles from top to bottom, so if you have conflicting styles, the one defined last will override the previous ones, assuming they have the same specificity.
+Although it's a simple project, I got stuck because my font size wouldn't update in resolutions higher than 992px. This happened because I had set the media query rule for my 'h1' before the default one. CSS reads and applies styles from top to bottom, so if you have conflicting styles, the one defined last will override the previous ones, assuming they have the same specificity.
 
 It took me some time to realize the mistake and fix it, but it was a learning experience.
 
