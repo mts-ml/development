@@ -23,7 +23,6 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://mts-ml.github.io/development/social-links-profile-main)
 - [Live Site URL](https://mts-ml.github.io/development/social-links-profile-main/index.html)
 
 
