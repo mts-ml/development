@@ -47,6 +47,7 @@ article section#details {
 article section#details h1 {
   font-family: "Young Serif", serif;
   font-size: 1.8rem;
+  font-weight: normal;
   margin: 20px 0;
   color: black;
 }
@@ -60,21 +61,24 @@ article section#details div.preparation {
   padding: 0 30px;
   text-align: left;
 }
-article section#details h3 {
+article section#details div.preparation h2 {
   color: var(--rose800);
   padding-top: 15px;
   margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
 }
-article section#details ul#preparation {
+article section#details div.preparation ul#preparation {
   padding-left: 20px;
   padding-bottom: 15px;
   margin-bottom: 25px;
   color: var(--rose800);
 }
-article section#details ul#preparation li {
-  padding: 10px 20px;
+article section#details div.preparation ul#preparation li {
+  padding: 5px 20px;
 }
-article section#details ul#preparation li span {
+article section#details div.preparation ul#preparation li span {
   color: var(--stone-600);
 }
 article section#details h2 {
@@ -110,7 +114,7 @@ article section#instructions ol {
 }
 article section#instructions ol li {
   position: relative;
-  padding: 0 0 7px 27px;
+  padding: 0px 0 10px 27px;
   color: var(--stone-600);
 }
 article section#instructions ol li::before {
@@ -134,19 +138,18 @@ article section#nutrition p {
   margin-bottom: 20px;
   color: var(--stone-600);
 }
-article section#nutrition ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+article section#nutrition table {
+  width: 100%;
+  border-collapse: collapse;
 }
-article section#nutrition ul li {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+article section#nutrition table tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-article section#nutrition ul li span {
-  color: var(--brown-800);
+article section#nutrition table tr td {
+  padding-left: 30px;
+}
+article section#nutrition table tr td.colored {
+  color: var(--rose800);
   font-weight: bold;
 }
 

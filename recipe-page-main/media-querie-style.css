@@ -7,5 +7,17 @@ article img {
   padding: 30px;
   border-radius: 40px;
 }
+article section#details h1 {
+  font-size: 2.4rem;
+}
+article section#details h2 {
+  font-size: 1.9rem;
+}
+article section#instructions h2 {
+  font-size: 1.9rem;
+}
+article section#nutrition h2 {
+  font-size: 1.9rem;
+}
 
 /*# sourceMappingURL=media-querie-style.css.map */

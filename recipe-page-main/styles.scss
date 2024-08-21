@@ -49,6 +49,7 @@ article {
       h1 {
          font-family: "Young Serif", serif;
          font-size: 1.8rem;
+         font-weight: normal;
          margin: 20px 0;
          color: black;
       }
@@ -63,25 +64,28 @@ article {
          border-radius: 10px;
          padding: 0 30px;
          text-align: left;
-      }
-
-      h3 {
-         color: var(--rose800);
-         padding-top: 15px;
-         margin-bottom: 15px;
-      }
-
-      ul#preparation {
-         padding-left: 20px;
-         padding-bottom: 15px;
-         margin-bottom: 25px;
-         color: var(--rose800);
-
-         li {
-            padding: 10px 20px;
-
-            span {
-               color: var(--stone-600);
+         
+         h2 {
+            color: var(--rose800);
+            padding-top: 15px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-family: "Outfit", sans-serif;
+            font-weight: bold;
+         }
+         
+         ul#preparation {
+            padding-left: 20px;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            color: var(--rose800);
+            
+            li {
+               padding: 5px 20px;
+               
+               span {
+                  color: var(--stone-600);
+               }
             }
          }
       }
@@ -126,7 +130,7 @@ article {
 
          li {
             position: relative;
-            padding: 0 0 7px 27px;
+            padding: 0px 0 10px 27px;
             color: var(--stone-600);
 
             &::before {
@@ -156,19 +160,19 @@ article {
          color: var(--stone-600);
       }
 
-      ul {
-         list-style: none;
-         display: flex;
-         flex-direction: column;
-         gap: 20px;
+      table {
+         width: 100%;
+         border-collapse: collapse;
 
-         li {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            span {
-               color: var(--brown-800);
+         tr {
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            
+            td {
+               padding-left: 30px;
+            }
+            
+            td.colored {
+               color: var(--rose800);
                font-weight: bold;
             }
          }
