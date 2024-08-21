@@ -149,7 +149,7 @@ article section#nutrition table tr td {
   padding: 10px 0 10px 30px;
 }
 article section#nutrition table tr td.colored {
-  color: var(--rose800);
+  color: var(--brown-800);
   font-weight: bold;
 }
 
