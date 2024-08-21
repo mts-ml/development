@@ -3,7 +3,7 @@
     "sass": "^1.77.8"
   },
   "scripts": {
-    "build-css": "sass styles.scss styles.css",
-    "watch-css": "sass --watch styles.scss:styles.css"
+    "build-css": "sass styles.scss styles.css && sass media-querie-style.scss media-querie-style.css",
+    "watch-css": "sass --watch styles.scss:styles.css media-querie-style.scss:media-querie-style.css"
   }
 }
