@@ -25,3 +25,8 @@ Each project in this repository corresponds to a specific challenge from Fronten
    - [Challenge Repository](https://github.com/mts-ml/development/tree/main/social-links-profile-main)
    - [Live Demo](https://mts-ml.github.io/development/social-links-profile-main/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd)
+  
+4. **Recipe page**
+   - [Challenge Repository](https://github.com/mts-ml/development/tree/main/recipe-page-main)
+   - [Live Demo](https://mts-ml.github.io/development/recipe-page-main/index.html)
+   - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd)
