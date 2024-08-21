@@ -17,7 +17,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- [Solution URL](https://github.com/mts-ml/development/tree/main/blog-preview-card-main)
 - [Live Site URL](https://mts-ml.github.io/development/blog-preview-card-main/index.html)
 
 
