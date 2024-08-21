@@ -10,9 +10,7 @@
 :root {
    --white: hsl(0, 0%, 100%);
    --stone-100: hsl(30, 54%, 90%);
-   --stone-150: hsl(30, 18%, 87%);
    --stone-600: hsl(30, 10%, 34%);
-   --stone-900: hsl(24, 5%, 18%);
    --brown-800: hsl(14, 45%, 36%);
    --rose800: hsl(332, 51%, 32%);
    --rose50: hsl(330, 100%, 98%);
@@ -26,90 +24,182 @@ textarea,
 button {
    font-family: "Outfit", sans-serif;
    font-size: 1rem;
+   color: var(--stone-600);
 }
 
 body {
    display: grid;
    place-items: center;
    min-height: 100vh;
-   text-align: justify;
    background-color: var(--stone-100);
 }
-   
-   article {
-      width: 330px;
-      background-color: var(--white);
-      
-      picture {
+
+main {
+   box-shadow: 0px 0px 2px .5px rgba(0, 0, 0, .3);
+}
+
+article {
+   width: 330px;
+   background-color: var(--white);
+
+   picture {
+      width: 100%;
+
+      img {
          width: 100%;
-         
-         img {
-            width: 100%;
-         }
-      }
-      
-      section#details {
-         padding: 0 20px;
-         
-         h1 {
-            font-family: "Young Serif", serif;
-            font-size: 1.8rem;
-            margin: 20px 0;
-         }
-         
-         p {
-            text-align: initial;
-            margin-bottom: 30px;
-         }
-         
-         div.preparation {
-            background-color: var(--rose50);
-            border-radius: 10px;            
-            padding: 0 30px;
-            text-align: left;
-         }
-
-         h3 {
-            color: var(--rose800);
-            padding-top: 15px;
-            margin-bottom: 15px;
-         }
-
-         ul#preparation {
-            padding-left: 20px;
-            padding-bottom: 15px;
-            margin-bottom: 25px;
-            color: var(--rose800);
-            
-            li {           
-               padding: 10px 20px;
-               
-               span {
-                  color: var(--stone-600);
-               }
-            }
-         }
-
-         h2 {
-            text-align: left;
-            color: var(--brown-800);
-            font-family: "Young Serif", serif;
-            font-weight: 400;
-            margin-bottom: 20px;
-         }
-
-         ul#ingredients {
-            padding-left: 25px;
-
-            li {
-               text-align: left;
-            }
-         }
-
-      }
-
-
-      section#instructions {
-         padding: 0 20px;
       }
    }
+
+   section#details {
+      padding: 0 25px;
+
+      h1 {
+         font-family: "Young Serif", serif;
+         font-size: 1.8rem;
+         margin: 20px 0;
+         color: black;
+      }
+
+      p {
+         text-align: initial;
+         margin-bottom: 30px;
+      }
+
+      div.preparation {
+         background-color: var(--rose50);
+         border-radius: 10px;
+         padding: 0 30px;
+         text-align: left;
+      }
+
+      h3 {
+         color: var(--rose800);
+         padding-top: 15px;
+         margin-bottom: 15px;
+      }
+
+      ul#preparation {
+         padding-left: 20px;
+         padding-bottom: 15px;
+         margin-bottom: 25px;
+         color: var(--rose800);
+
+         li {
+            padding: 10px 20px;
+
+            span {
+               color: var(--stone-600);
+            }
+         }
+      }
+
+      h2 {
+         color: var(--brown-800);
+         font-family: "Young Serif", serif;
+         font-size: 1.6rem;
+         font-weight: 400;
+         margin-bottom: 18px;
+      }
+
+      ul#ingredients {
+         padding: 0 0 25px 25px;
+         color: var(--brown-800);
+
+         li {
+            padding: 10px;
+
+            span {
+               color: var(--stone-600);
+            }
+         }
+      }
+   }
+
+   section#instructions {
+      padding: 20px;
+
+      h2 {
+         color: var(--brown-800);
+         font-family: "Young Serif", serif;
+         font-size: 1.6rem;
+         font-weight: 400;
+         margin-bottom: 18px;
+      }
+
+      ol {
+         padding: 0 0 20px 9px;
+         list-style: none;
+
+
+         li {
+            position: relative;
+            padding: 0 0 7px 27px;
+            color: var(--stone-600);
+
+            &::before {
+               content: counter(list-item) '.';
+               position: absolute;
+               left: 0;
+               color: var(--brown-800);
+               font-weight: bold;
+            }
+         }
+      }
+   }
+
+   section#nutrition {
+      padding: 10px 20px 35px;
+
+      h2 {
+         color: var(--brown-800);
+         font-family: "Young Serif", serif;
+         font-size: 1.6rem;
+         font-weight: 400;
+         margin-bottom: 18px;
+      }
+
+      p {
+         margin-bottom: 20px;
+         color: var(--stone-600);
+      }
+
+      ul {
+         list-style: none;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+
+         li {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            span {
+               color: var(--brown-800);
+               font-weight: bold;
+            }
+         }
+      }
+   }
+}
+
+footer {
+   margin-top: 30px;
+
+   p {
+      text-align: center;
+   }
+   
+   a {
+      color: black;
+      text-decoration: none;
+   }  
+
+   a::after {
+      content: '\1F517';
+   }
+
+   a:hover {
+      text-decoration: underline;
+   }
+}
