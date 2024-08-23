@@ -1,0 +1,56 @@
+main {
+   margin-top: 30px;
+   width: 530px;
+   height: 100%;
+}
+
+
+aside img {
+   width: 530px;
+}
+
+
+article {
+
+   strong {
+      font-size: 1.2rem;
+   }
+
+   h1 {
+      font-size: 3.4rem;
+      padding-right: 10px;
+   }
+
+   p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+   }
+
+   div.value {
+
+      span.current-price {
+         font-size: 3rem;
+      }
+
+      span.previous-price {
+         font-size: 1.8rem;
+      }
+   }
+
+   button {
+      font-size: 1.3rem;
+      height: 50px;
+
+      span.material-symbols-outlined {
+         font-size: 1.3rem;
+      }
+   }
+}
+
+footer {
+   margin-top: 30px;
+
+   p {
+      font-size: 1.4rem;
+   }
+}
