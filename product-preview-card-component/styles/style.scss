@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --dark-cyan: hsl(158, 36%, 37%);
+   --cream: hsl(30, 38%, 92%);
+   --very-dark-blue: hsl(212, 21%, 14%);
+   --dark-grayish-blue: hsl(228, 12%, 48%);
+   ---white: hsl(0, 0%, 100%);
+}
+
+
+body {
+   background-color: var(--cream);
+   display: grid;
+   place-items: center;
+   min-height: 100vh;
+}
+
+main {
+   background-color: var(---white);
+   width: 250px;
+   height: 445px;
+   border-radius: 10px;
+}
+
+aside {
+   text-align: center;
+   
+   img {
+      border-radius: 10px 10px 0 0;
+      width: 250px;
+   }
+}
+
+article {
+   padding-left: 20px;
+   margin-top: 10px;
+
+   strong {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      color: var(--dark-grayish-blue);
+      font-size: .6rem;
+   }
+
+   h1 {
+      font-family: "Fraunces", serif;
+      margin: 10px 0;
+      font-size: 1.5rem;
+   }
+   
+   p {
+      font-family: "Montserrat", sans-serif;
+      color: var(--dark-grayish-blue);
+      font-size: 0.65rem;
+      line-height: 1.2rem;
+      padding-right: 14px;
+      margin-bottom: 10px;
+   }
+   
+   div.value {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      span.current-price {
+         font-family: "Fraunces", serif;
+         color: var(--dark-cyan);
+         font-weight: bold;
+         font-size: 1.4rem;
+      }
+      
+      span.previous-price {
+         text-decoration: line-through;
+         color: var(--dark-grayish-blue);
+         font-size: .8rem;
+      }
+   }
+
+   button {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      justify-content: center;
+
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: .5rem;
+      background-color: var(--dark-cyan);
+      border: none;
+      cursor: pointer;
+      color: var(---white);
+      height: 25px;
+      width: 92%;
+      border-radius: 5px;
+
+      span.material-symbols-outlined {
+         font-size: .8rem;
+      }
+   }
+
+   button:hover {
+      background-color: hsl(158, 36%, 20%);
+   }
+}
