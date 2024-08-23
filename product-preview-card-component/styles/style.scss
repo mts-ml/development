@@ -12,7 +12,7 @@
    --cream: hsl(30, 38%, 92%);
    --very-dark-blue: hsl(212, 21%, 14%);
    --dark-grayish-blue: hsl(228, 12%, 48%);
-   ---white: hsl(0, 0%, 100%);
+   --white: hsl(0, 0%, 100%);
 }
 
 
@@ -24,7 +24,7 @@ body {
 }
 
 main {
-   background-color: var(---white);
+   background-color: var(--white);
    width: 250px;
    height: 445px;
    border-radius: 10px;
@@ -97,7 +97,7 @@ article {
       background-color: var(--dark-cyan);
       border: none;
       cursor: pointer;
-      color: var(---white);
+      color: var(--white);
       height: 25px;
       width: 92%;
       border-radius: 5px;
@@ -109,5 +109,28 @@ article {
 
    button:hover {
       background-color: hsl(158, 36%, 20%);
+   }
+}
+
+footer {
+   text-align: center;
+
+   p {
+      font-family: "Montserrat", sans-serif;
+
+
+      a {
+         text-decoration: none;
+         color: var(--dark-cyan);
+         font-weight: bold;
+      }
+
+      a:hover {
+         text-decoration: underline;
+      }
+   }
+
+   p::after {
+      content: ' \1F517';
    }
 }

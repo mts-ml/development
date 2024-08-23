@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -10,7 +11,7 @@
   --cream: hsl(30, 38%, 92%);
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
-  ---white: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 100%);
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 }
 
 main {
-  background-color: var(---white);
+  background-color: var(--white);
   width: 250px;
   height: 445px;
   border-radius: 10px;
@@ -86,7 +87,7 @@ article button {
   background-color: var(--dark-cyan);
   border: none;
   cursor: pointer;
-  color: var(---white);
+  color: var(--white);
   height: 25px;
   width: 92%;
   border-radius: 5px;
@@ -96,6 +97,24 @@ article button span.material-symbols-outlined {
 }
 article button:hover {
   background-color: hsl(158, 36%, 20%);
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+}
+footer p a {
+  text-decoration: none;
+  color: var(--dark-cyan);
+  font-weight: bold;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+footer p::after {
+  content: " 🔗";
 }
 
 /*# sourceMappingURL=style.css.map */

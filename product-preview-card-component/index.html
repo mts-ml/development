@@ -14,12 +14,20 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="stylesheet" href="styles/style-landscape.css" media="(orientation: landscape) and (max-width: 767px)">
+
+
 </head>
 
 <body>
   <main>
     <aside>
-      <img src="./images/image-product-mobile-300x300.jpg" alt="Image of a perfume">
+      <picture>
+        <source media="(min-width: 550px )" srcset="./images/image-product-mobile.jpg">
+        
+        <img src="./images/image-product-mobile-300x300.jpg" alt="Image of a perfume">
+      </picture>
     </aside>
 
     <article>
@@ -45,10 +53,16 @@
       </button>
     </article>
   </main>
-  <!-- <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer> -->
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD"
+        target="_blank" rel="noopener noreferrer">Frontend Mentor</a>
+    </p>
+    <p>
+      Coded by <a href="https://www.frontendmentor.io/profile/mts-ml" target="_blank" rel="noopener noreferrer">Mateus
+        Lima</a>
+    </p>
+  </footer>
 </body>
 
 </html>
