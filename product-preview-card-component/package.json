@@ -3,6 +3,6 @@
     "sass": "^1.77.8"
   },
   "scripts": {
-    "sass": "sass styles/style.scss:styles/style.css styles/style-landscape.scss:styles/style-landscape.css"
+    "sass": "sass styles/style.scss:styles/style.css styles/style-landscape.scss:styles/style-landscape.css styles/media-querie-style.scss:styles/media-querie-style.css"
   }
 }
