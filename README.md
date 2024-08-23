@@ -30,3 +30,8 @@ Each project in this repository corresponds to a specific challenge from Fronten
    - [Challenge Repository](https://github.com/mts-ml/development/tree/main/recipe-page-main)
    - [Live Demo](https://mts-ml.github.io/development/recipe-page-main/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd)
+  
+5. **Preview Card Content**
+   - [Challenge Repository](https://github.com/mts-ml/development/tree/main/product-preview-card-component)
+   - [Live Demo](https://mts-ml.github.io/development/product-preview-card-component/index.html)
+   - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD)
