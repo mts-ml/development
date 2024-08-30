@@ -3,6 +3,6 @@
     "sass": "^1.77.8"
   },
   "scripts": {
-    "sass": "sass styles/style.scss:styles/style.css"
+    "sass": "sass styles/style.scss:styles/style.css styles/mq1.scss:styles/mq1.css"
   }
 }

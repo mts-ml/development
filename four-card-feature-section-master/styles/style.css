@@ -61,13 +61,13 @@ main div.cards p {
   color: var(--GrayishBlue);
   padding: 10px 0;
 }
-main div#color1 {
+main div.cards:nth-child(2) {
   border-top: 4px solid var(--Red);
 }
-main div#color2 {
+main div.cards:nth-child(3) {
   border-top: 4px solid var(--Orange);
 }
-main div#color3 {
+main div.cards:nth-child(4) {
   border-color: var(--Blue);
 }
 

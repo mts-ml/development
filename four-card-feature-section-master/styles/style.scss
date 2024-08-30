@@ -70,15 +70,15 @@ main {
       }
    }
 
-   div#color1 {
+   div.cards:nth-child(2) {
       border-top: 4px solid var(--Red);
    }
 
-   div#color2 {
+   div.cards:nth-child(3) {
       border-top: 4px solid var(--Orange);
    }
 
-   div#color3 {
+   div.cards:nth-child(4) {
       border-color: var(--Blue);
    }
 }
