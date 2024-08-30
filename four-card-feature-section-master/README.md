@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://mts-ml.github.io/development/four-card-section-master/index.html)
+- [Live Site URL](https://mts-ml.github.io/development/four-card-feature-section-master/index.html)
 
 
 ### Built with
@@ -38,6 +38,7 @@ Users should be able to:
 
 ### What I learned
 
+  - I've learned to use Grid for this project.
 
 
 ## Author
