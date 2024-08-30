@@ -30,3 +30,52 @@ main {
       margin: auto;
    }
 }
+
+
+@media screen and (min-width: 1244px) {
+   body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+   }
+
+
+
+   div#content {
+      width: 1244px;
+   }
+
+   header {
+      margin: auto;
+      width: 650px;
+      margin-bottom: 60px;
+   }
+
+   main {
+      max-width: 1244px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+      text-align: left;
+      gap: 1rem;
+
+      div.cards {
+         width: 400px;
+
+         img {
+            margin-right: 0; 
+         }
+      }
+
+      div.cards:nth-child(odd) {
+         transform: translateY(50%);
+      }
+   }
+   
+   
+   
+   footer {
+      margin-top: auto;
+   }
+}
