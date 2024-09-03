@@ -35,6 +35,7 @@ article {
   border-radius: 8px;
   width: 310px;
   padding: 30px;
+  position: relative;
 }
 article header {
   display: flex;
@@ -58,11 +59,22 @@ article header div.content p.position {
   color: rgba(255, 255, 255, 0.4);
   font-size: 0.64rem;
 }
+article img.qm {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
 article h1 {
   margin: 20px 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  word-break: break-word;
   color: var(--White);
   font-weight: 450;
+  z-index: 1;
+  position: relative;
 }
 article p.description {
   color: rgba(255, 255, 255, 0.4);

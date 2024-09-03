@@ -11,8 +11,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - [Author](#author)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -24,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://mts-ml.github.io/development/testimonials-grid-section/index.html)
+- [GitHub Pages](https://mts-ml.github.io/development/testimonials-grid-section/index.html)
 
 
 ### Built with
@@ -40,4 +38,4 @@ Users should be able to:
 ## Author
 
 - Website - [LinkedIn](https://www.linkedin.com/in/mateus-lima-036790184/)
-- Frontend Mentor - [@ymts-ml](https://www.frontendmentor.io/profile/mts-ml)
+- Frontend Mentor - [@mts-ml](https://www.frontendmentor.io/profile/mts-ml)
