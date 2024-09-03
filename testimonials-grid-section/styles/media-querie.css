@@ -96,7 +96,9 @@ article:nth-child(5) h1 {
     height: auto;
   }
   article:nth-child(5) h1 {
-    font-size: 1.3rem;
+    font-size: 1.188rem;
+    line-height: 1.6rem;
+    font-weight: 600;
   }
   article:nth-child(5) p.description {
     font-size: 0.82rem;
