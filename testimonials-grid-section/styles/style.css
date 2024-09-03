@@ -131,8 +131,8 @@ article:nth-child(5) header > div.content > p.position {
 }
 article:nth-child(5) h1 {
   color: var(--Very-dark-grayish-blue);
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: bold;
+  font-size: 1.17rem;
 }
 article:nth-child(5) p.description {
   color: hsla(217, 15%, 51%, 0.8);
