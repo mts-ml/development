@@ -25,6 +25,7 @@ main {
    display: flex;
    flex-flow: column nowrap;
    align-items: center;
+   margin: 40px;
 
    img {
       border-radius: 50%;
@@ -32,7 +33,7 @@ main {
 }
 
 article {
-   margin: 25px;
+   margin: 15px;
    border-radius: 8px;
    width: 310px;
    padding: 30px;
@@ -99,7 +100,7 @@ article:nth-child(3) {
    }
 
    header>div.content>p.position {
-      color: var(--Light-gray);
+      color: rgb(184, 183, 183)
    }
 
    h1 {
@@ -127,12 +128,11 @@ article:nth-child(5)  {
 
    header>div.content>p.name {
       color: var(--Very-dark-grayish-blue);
-      font-size: .9rem;
       font-weight: 500;
    }
 
    header>div.content>p.position {
-      color: var(--Light-gray)
+      color: rgb(184, 183, 183)
    }
 
    h1 {
@@ -147,4 +147,22 @@ article:nth-child(5)  {
       font-size: .78rem;
    }
 
+}
+
+footer {
+   text-align: center;
+
+   a {
+      text-decoration: none;
+      color: var(--Very-dark-grayish-blue);
+      font-weight: bold;
+   }
+
+   a::after {
+      content: ' \1F517';
+   }
+
+   a:hover {
+      text-decoration: underline;
+   }
 }
