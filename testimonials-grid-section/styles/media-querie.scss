@@ -49,6 +49,8 @@ article:nth-child(5) {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
    }
    
    main {
