@@ -1,10 +1,16 @@
 
-const wrapperDiv = document.querySelector('div.wrapper');
-const linksDiv = document.querySelector('div.hide');
-const imageDiv = document.querySelector('div.image');
+const wrapperDiv = document.querySelector('#div1');
+const linksDiv = document.querySelector('#div2');
 
-imageDiv.addEventListener('click', () => {
-   wrapperDiv.classList.replace('wrapper', 'hide');
-   linksDiv.classList.add('links')
+const imageDiv1 = document.querySelector('div.image1');
+const imageDiv2 = document.querySelector('div.image2')
+
+imageDiv1.addEventListener('click', () => {
+   wrapperDiv.classList.replace('wrapper', 'hide')
+   linksDiv.classList.replace('hide', 'links')
+})
+
+imageDiv2.addEventListener('click', () => {
    linksDiv.classList.replace('links', 'hide')
+   wrapperDiv.classList.replace('hide', 'wrapper')
 })

@@ -74,13 +74,13 @@ main footer.info div.wrapper div.contact div span {
   color: var(--Desaturated-Dark-Blue);
   font-size: 0.83rem;
 }
-main footer.info div.wrapper div.image {
+main footer.info div.wrapper div.image1 {
   margin: 0 30px;
   padding: 6px;
   border-radius: 50%;
   background-color: var(--Light-Grayish-Blue);
 }
-main footer.info div.wrapper div.image:hover {
+main footer.info div.wrapper div.image1:hover {
   cursor: pointer;
 }
 main footer.info div.links {
@@ -110,7 +110,7 @@ main footer.info div.links ul li {
 main footer.info div.links ul li:hover {
   transform: scale(1.25);
 }
-main footer.info div.links div.image {
+main footer.info div.links div.image2 {
   position: absolute;
   right: 0;
   margin: 0 30px;
@@ -118,7 +118,7 @@ main footer.info div.links div.image {
   border-radius: 50%;
   background-color: var(--Light-Grayish-Blue);
 }
-main footer.info div.links div.image:hover {
+main footer.info div.links div.image2:hover {
   cursor: pointer;
 }
 
