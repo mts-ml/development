@@ -21,32 +21,38 @@ Each project in this repository corresponds to a specific challenge from Fronten
    - [Live Demo](https://mts-ml.github.io/development/blog-preview-card-main/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd)
 
+
 3. **Social links profile**
    - [Challenge Repository](https://github.com/mts-ml/development/tree/main/social-links-profile-main)
    - [Live Demo](https://mts-ml.github.io/development/social-links-profile-main/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd)
+
   
 4. **Recipe page**
    - [Challenge Repository](https://github.com/mts-ml/development/tree/main/recipe-page-main)
    - [Live Demo](https://mts-ml.github.io/development/recipe-page-main/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd)
+
   
 5. **Product Preview Card Content**
    - [Challenge Repository](https://github.com/mts-ml/development/tree/main/product-preview-card-component)
    - [Live Demo](https://mts-ml.github.io/development/product-preview-card-component/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD)
 
+
 6. **Four Card Feature Section**
    - [Challenge Repository](https://github.com/mts-ml/development/tree/main/four-card-feature-section-master)
    - [Live Demo](https://mts-ml.github.io/development/four-card-feature-section-master/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD)
+
   
 7. **Testimonials Grid Section**
-- [Challenge Repository](https://github.com/mts-ml/development/tree/main/testimonials-grid-section)
-- [Live Demo](https://mts-ml.github.io/development/testimonials-grid-section/index.html)
-- [Frontend Mentor Challenge](https://www.frontendmentor.io/solutions/testimonials-grid-section-challenge-nnL0UL55DF)
+   - [Challenge Repository](https://github.com/mts-ml/development/tree/main/testimonials-grid-section)
+   - [Live Demo](https://mts-ml.github.io/development/testimonials-grid-section/index.html)
+   - [Frontend Mentor Challenge](https://www.frontendmentor.io/solutions/testimonials-grid-section-challenge-nnL0UL55DF)
+
 
 8. **Article Preview COmponent**
-- [Challenge Repository](https://github.com/mts-ml/development/tree/main/article-preview-component)
-- [Live Demo](https://mts-ml.github.io/development/article-preview-component/index.html)
-- [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
+   - [Challenge Repository](https://github.com/mts-ml/development/tree/main/article-preview-component)
+   - [Live Demo](https://mts-ml.github.io/development/article-preview-component/index.html)
+   - [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
