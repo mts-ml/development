@@ -1,0 +1,112 @@
+div.wrapper {
+  display: block;
+  width: 305px;
+}
+div.wrapper picture img {
+  width: 305px;
+  border-radius: 10px 10px 0 0;
+}
+div.wrapper div.content {
+  padding-bottom: 15px;
+}
+div.wrapper div.content h1 {
+  font-size: 0.813rem;
+}
+div.wrapper div.content p {
+  font-size: 0.7rem;
+}
+div.wrapper div.content div.info {
+  margin-right: -4px;
+}
+div.wrapper div.content div.info div.author img {
+  width: 40px;
+}
+div.wrapper div.content div.info div.author div.name-date-container h2 {
+  font-size: 0.713rem;
+}
+div.wrapper div.content div.info div.author div.name-date-container span {
+  font-size: 0.7rem;
+}
+div.wrapper div.content div.share-container {
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+}
+div.wrapper div.content div.share-container div.icons-container {
+  width: 305px;
+  height: 65px;
+  justify-content: center;
+}
+div.wrapper div.content div.share-container div.icons-container::after {
+  display: none;
+}
+div.wrapper div.content div.share-container div.icons-container ul {
+  padding-right: 55px;
+}
+div.wrapper div.content div.share-icon {
+  z-index: 1;
+}
+div.wrapper div.content div.share-icon img {
+  padding: 8px;
+}
+
+@media screen and (min-width: 600px) {
+  div.wrapper {
+    width: 600px;
+  }
+  div.wrapper picture img {
+    width: 600px;
+  }
+  div.wrapper div.content h1 {
+    font-size: 1.9rem;
+  }
+  div.wrapper div.content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  div.wrapper div.content div.info {
+    margin-right: 20px;
+  }
+  div.wrapper div.content div.info div.author img {
+    width: 70px;
+  }
+  div.wrapper div.content div.info div.author div.name-date-container h2 {
+    font-size: 1.2rem;
+  }
+  div.wrapper div.content div.info div.author div.name-date-container span {
+    font-size: 1.2rem;
+  }
+  div.wrapper div.content div.info div.share-container div.icons-container {
+    width: 600px;
+    height: 85px;
+    justify-content: left;
+    gap: 1rem;
+  }
+  div.wrapper div.content div.info div.share-container div.icons-container::after {
+    display: none;
+  }
+  div.wrapper div.content div.info div.share-container div.icons-container span {
+    font-size: 1.8em;
+    padding-left: 50px;
+  }
+  div.wrapper div.content div.info div.share-container div.icons-container ul {
+    gap: 3rem;
+  }
+  div.wrapper div.content div.info div.share-container div.icons-container ul li > a > img {
+    width: 35px;
+  }
+  div.wrapper div.content div.info div.share-container div.icons-container ul li:hover {
+    transform: scale(1.3);
+  }
+  div.wrapper div.content div.share-icon {
+    width: 45px;
+    height: auto;
+  }
+  div.wrapper div.content div.share-icon img {
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

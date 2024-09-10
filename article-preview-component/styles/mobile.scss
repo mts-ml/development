@@ -1,0 +1,167 @@
+div.wrapper {
+   display: block;
+   width: 305px;
+
+   picture {
+      img {
+         width: 305px;
+         border-radius: 10px 10px 0 0;
+      }
+   }
+
+   div.content {
+      padding-bottom: 15px;
+
+      h1 {
+         font-size: .813rem;
+      }
+
+      p {
+         font-size: 0.7rem;
+      }
+
+      div.info {
+         margin-right: -4px;
+
+         div.author {
+
+            img {
+               width: 40px;
+            }
+
+            div.name-date-container {
+               h2 {
+                  font-size: .713rem;
+               }
+
+               span {
+                  font-size: .7rem;
+               }
+            }
+         }
+      }
+
+      // DIV Share Links
+
+      div.share-container {
+         z-index: 0;
+         right: 0;
+         bottom: 0;
+         border-radius: 0 0 10px 10px;
+
+         div.icons-container {
+            width: 305px;
+            height: 65px;
+            justify-content: center;
+
+            &::after {
+               display: none;
+            }
+
+            ul {
+               padding-right: 55px;
+            }
+         }
+      }
+
+      // DIV Share Links
+
+      div.share-icon {
+         z-index: 1;
+
+         img {
+            padding: 8px;
+         }
+      }
+
+   }
+}
+
+
+@media screen and (min-width: 600px) {
+   div.wrapper {
+      width: 600px;
+
+      picture {
+         img {
+            width: 600px;
+         }
+      }
+
+      div.content {
+         h1 {
+            font-size: 1.9rem;
+         }
+
+         p {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+         }
+
+         div.info {
+            margin-right: 20px;
+
+            div.author {
+
+               img {
+                  width: 70px;
+               }
+
+               div.name-date-container {
+                  h2 {
+                     font-size: 1.2rem;
+                  }
+
+                  span {
+                     font-size: 1.2rem;
+                  }
+               }
+            }
+
+            //SHARED-LINK DIV
+
+            div.share-container {               
+
+               div.icons-container {
+                  width: 600px;
+                  height: 85px;
+                  justify-content: left;
+                  gap: 1rem;
+
+                  &::after {
+                     display: none;
+                  }
+
+                  span {
+                     font-size: 1.8em;
+                     padding-left: 50px;
+                  }
+
+                  ul {
+                     gap: 3rem;
+
+                     li>a>img {
+                        width: 35px;
+                     }
+
+                     li:hover {
+                        transform: scale(1.3);
+                     }
+                  }
+               }
+            }
+            //SHARED-LINK DIV
+         }
+
+         div.share-icon {
+            width: 45px;
+            height: auto;
+
+            img {
+               padding: 15px;
+               width: 100%;
+            };
+         }
+      }
+   }
+}

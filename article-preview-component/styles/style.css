@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+  font-family: "Manrope", system-ui;
+  font-size: 0.813rem;
+  background-color: var(--Light-Grayish-Blue);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+div.wrapper {
+  position: relative;
+  width: 750px;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+}
+div.wrapper picture img {
+  width: 320px;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  transition: transform 0.3s ease-in-out;
+}
+div.wrapper div.content {
+  padding: 30px 40px;
+}
+div.wrapper div.content h1 {
+  font-size: 1.25rem;
+  color: var(--Very-Dark-Grayish-Blue);
+  margin-bottom: 15px;
+}
+div.wrapper div.content p {
+  color: var(--Desaturated-Dark-Blue);
+  line-height: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+div.wrapper div.content div.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: -12px;
+}
+div.wrapper div.content div.info div.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+div.wrapper div.content div.info div.author img {
+  border-radius: 50%;
+  width: 50px;
+}
+div.wrapper div.content div.info div.name-date-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.2rem;
+}
+div.wrapper div.content div.info div.name-date-container h2 {
+  font-size: 0.9rem;
+  color: var(--Very-Dark-Grayish-Blue);
+}
+div.wrapper div.content div.info div.name-date-container span {
+  color: var(--Grayish-Blue);
+  font-size: 0.93rem;
+}
+div.wrapper div.content div.share-container {
+  position: absolute;
+  right: -52px;
+  bottom: 103px;
+  background-color: var(--Very-Dark-Grayish-Blue);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.212);
+}
+div.wrapper div.content div.share-container div.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 222px;
+  height: 50px;
+}
+div.wrapper div.content div.share-container div.icons-container::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  right: 85px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
+}
+div.wrapper div.content div.share-container div.icons-container span {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+div.wrapper div.content div.share-container div.icons-container ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 15px 30px 15px 20px;
+}
+div.wrapper div.content div.share-container div.icons-container ul li {
+  transition: transform 0.3s ease-in-out;
+}
+div.wrapper div.content div.share-container div.icons-container ul li:hover {
+  transform: scale(1.2);
+}
+div.wrapper .hide {
+  display: none;
+}
+div.wrapper div.share-icon {
+  border-radius: 50%;
+  background-color: var(--Light-Grayish-Blue);
+}
+div.wrapper div.share-icon img {
+  padding: 10px;
+}
+div.wrapper div.share-icon img:hover {
+  cursor: pointer;
+}
+div.wrapper .share-icon.white-icon img {
+  filter: invert(1) grayscale(1) brightness(2);
+}
+
+/*# sourceMappingURL=style.css.map */
