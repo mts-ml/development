@@ -40,3 +40,13 @@ Each project in this repository corresponds to a specific challenge from Fronten
    - [Challenge Repository](https://github.com/mts-ml/development/tree/main/four-card-feature-section-master)
    - [Live Demo](https://mts-ml.github.io/development/four-card-feature-section-master/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD)
+  
+7. **Testimonials Grid Section**
+- [Challenge Repository](https://github.com/mts-ml/development/tree/main/testimonials-grid-section)
+- [Live Demo](https://mts-ml.github.io/development/testimonials-grid-section/index.html)
+- [Frontend Mentor Challenge](https://www.frontendmentor.io/solutions/testimonials-grid-section-challenge-nnL0UL55DF)
+
+8. **Article Preview COmponent**
+- [Challenge Repository](https://github.com/mts-ml/development/tree/main/article-preview-component)
+- [Live Demo](https://mts-ml.github.io/development/article-preview-component/index.html)
+- [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
