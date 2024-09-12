@@ -58,8 +58,15 @@ Each project in this repository corresponds to a specific challenge from Fronten
 <br>
 
 
-8. **Article Preview COmponent**
+8. **Article Preview Component**
    - [Challenge Repository](https://github.com/mts-ml/development/tree/main/article-preview-component)
    - [Live Demo](https://mts-ml.github.io/development/article-preview-component/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
+<br>
+
+
+9. **Newsletter sign up with success message**
+   - [Challenge Repository](https://github.com/mts-ml/development/tree/main/newsletter-sign-up-with-success-message)
+   - [Live Demo](https://mts-ml.github.io/development/newsletter-sign-up-with-success-message/index.html)
+   - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-/steps/66d789013c19191dc3009f0c/challenge/start)
 <br>
