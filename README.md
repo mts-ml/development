@@ -70,3 +70,10 @@ Each project in this repository corresponds to a specific challenge from Fronten
    - [Live Demo](https://mts-ml.github.io/development/newsletter-sign-up-with-success-message/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-/steps/66d789013c19191dc3009f0c/challenge/start)
 <br>
+
+
+9. **Time tracking dashboard**
+   - [Challenge Repository](https://github.com/mts-ml/development/tree/main/time-tracking-dashboard-main)
+   - [Live Demo](https://mts-ml.github.io/development/time-tracking-dashboard-main/index.html)
+   - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-)
+<br>
