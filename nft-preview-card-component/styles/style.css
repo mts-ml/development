@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+textarea,
+input {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.content {
+  background-color: hsl(216, 50%, 16%);
+  width: 18.75rem;
+  border-radius: 10px;
+  color: hsla(215, 42%, 75%, 0.8);
+  font-weight: 200;
+  box-shadow: 0px 0px 35px 35px hsl(217, 55%, 8%);
+}
+
+.content__picture {
+  position: relative;
+}
+.content__picture:hover .content__icon-view {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.content__cube-img {
+  padding: 20px;
+  border-radius: 25px;
+  width: 100%;
+}
+.content__cube-img:hover {
+  cursor: pointer;
+}
+
+.content__icon-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  transform: opacity 0.3s ease-in-out;
+}
+
+.content__title {
+  display: inline-block;
+  margin: 0 0 20px 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+}
+.content__title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.content__description {
+  padding: 0 5px 20px 20px;
+  line-height: 1.6rem;
+}
+
+.content__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+}
+
+.content__crypto-info {
+  display: flex;
+  gap: 0.5rem;
+  align-content: center;
+}
+
+.content__value {
+  color: hsl(178, 100%, 50%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.content__time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+
+.content__line {
+  margin: auto;
+  width: 87%;
+  margin-bottom: 20px;
+  height: 0.1rem;
+  background-color: hsla(215, 42%, 75%, 0.2);
+  border: none;
+}
+
+.content__bio {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 20px 20px;
+  gap: 1rem;
+}
+
+.content__image {
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.content__p {
+  font-size: 1rem;
+}
+
+.content__name {
+  color: white;
+}
+.content__name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
