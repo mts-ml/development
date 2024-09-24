@@ -72,8 +72,18 @@ Each project in this repository corresponds to a specific challenge from Fronten
 <br>
 
 
-9. **Time tracking dashboard**
+10. **Time tracking dashboard**
    - [Challenge Repository](https://github.com/mts-ml/development/tree/main/time-tracking-dashboard-main)
    - [Live Demo](https://mts-ml.github.io/development/time-tracking-dashboard-main/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-)
 <br>
+
+
+11. **Tip calculator app**
+   - [Challenge Repository](https://github.com/mts-ml/development/tree/main/tip-calculator-app)
+   - [Live Demo](https://mts-ml.github.io/development/tip-calculator-app/index.html)
+   - [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
+<br>
+
+
+
