@@ -31,19 +31,28 @@ body {
 .content__picture {
   position: relative;
 }
-.content__picture:hover .content__icon-view {
-  display: block;
+
+.content__bg-color {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 260px;
+  height: 260px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.content__bg-color:hover {
+  background-color: hsla(178, 100%, 50%, 0.6);
+}
+.content__bg-color:hover .content__icon-view {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .content__cube-img {
   padding: 20px;
   border-radius: 25px;
   width: 100%;
-}
-.content__cube-img:hover {
-  cursor: pointer;
 }
 
 .content__icon-view {
@@ -52,9 +61,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  display: none;
+  transition: opacity 0.5s ease-in-out;
   opacity: 0;
-  transform: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.content__bg-color:hover + .content__icon-view,
+.content__picture:hover .content__icon-view {
+  opacity: 1;
 }
 
 .content__title {
@@ -63,9 +77,11 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   color: hsl(0, 0%, 100%);
+  transition: 0.3s ease-in-out;
 }
 .content__title:hover {
   color: hsl(178, 100%, 50%);
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -127,9 +143,11 @@ body {
 
 .content__name {
   color: white;
+  transition: 0.3s ease-in-out;
 }
 .content__name:hover {
   color: hsl(178, 100%, 50%);
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
