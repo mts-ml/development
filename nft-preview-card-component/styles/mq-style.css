@@ -18,6 +18,9 @@
   .content__time {
     font-size: 1.2rem;
   }
+  .content__image {
+    width: 40px;
+  }
   .content__p {
     font-size: 1.4rem;
   }
@@ -41,6 +44,9 @@
   }
   .content__time {
     font-size: 1.4rem;
+  }
+  .content__image {
+    width: 50px;
   }
   .content__p {
     font-size: 1.6rem;
