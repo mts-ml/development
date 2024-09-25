@@ -86,4 +86,8 @@ Each project in this repository corresponds to a specific challenge from Fronten
 <br>
 
 
-
+12. **NFT preview card component**
+   - [Challenge Repository](https://github.com/mts-ml/development/tree/main/nft-preview-card-component)
+   - [Live Demo](https://mts-ml.github.io/development/nft-preview-card-component/index.html)
+   - [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+<br>
