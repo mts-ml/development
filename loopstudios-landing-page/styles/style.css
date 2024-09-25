@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #222;
+}
+
+header.menu {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  gap: 9rem;
+  padding: 30px 20px;
+  width: 18.75rem;
+  background: url("../images/mobile/image-hero.jpg") no-repeat center;
+  background-size: cover;
+  height: 33.125rem;
+}
+
+.menu__logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__tittle-hidden {
+  display: none;
+}
+
+.menu__title-img {
+  width: 100px;
+}
+
+.menu__hamburguer-img {
+  height: 12px;
+  width: 18px;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.menu__title {
+  border: 0.0625rem solid white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.9375rem;
+  color: hsl(0, 0%, 100%);
+  padding: 1.25rem;
+}
+
+.main {
+  background-color: hsl(0, 0%, 100%);
+  width: 18.75rem;
+}
+
+.main__img {
+  padding: 0 1.25rem;
+  margin-top: 6.25rem;
+  width: 18.75rem;
+}
+
+.main__title {
+  padding: 1.875rem;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  font-weight: 350;
+  font-size: 1.625rem;
+}
+
+.main__description {
+  color: hsl(0, 0%, 41%);
+  line-height: 1.4375rem;
+  padding: 0 2.5rem;
+  font-size: 0.875rem;
+  margin-bottom: 40px;
+}
+
+.button {
+  margin-top: 30px;
+}
+
+article.products {
+  position: relative;
+  width: 18.75rem;
+  text-transform: uppercase;
+  padding: 30px;
+  margin-top: 20px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  background-color: black;
+  height: 6.875rem;
+}
+
+.products__title {
+  position: absolute;
+  bottom: 25px;
+  left: 17px;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.products--earth {
+  background: url("../images/mobile/image-deep-earth.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.products--arcade {
+  background: url("../images/mobile/image-night-arcade.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.products--soccer {
+  background: url("../images/mobile/image-soccer-team.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.products--grid {
+  background: url("../images/mobile/image-grid.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.products--vr {
+  background: url("../images/mobile/image-from-above.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.products--borealis {
+  background: url("../images/mobile/image-pocket-borealis.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.products--curiosity {
+  background: url("../images/mobile/image-curiosity.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.products--fisheye {
+  background: url("../images/mobile/image-fisheye.jpg") center no-repeat;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=style.css.map */
