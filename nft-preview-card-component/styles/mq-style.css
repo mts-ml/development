@@ -1,0 +1,50 @@
+@media screen and (min-width: 375px) {
+  .content {
+    width: 23rem;
+  }
+  .content__bg-color {
+    width: 327px;
+    height: 328px;
+  }
+  .content__title {
+    font-size: 2rem;
+  }
+  .content__description {
+    font-size: 1.2rem;
+  }
+  .content__value {
+    font-size: 1.2rem;
+  }
+  .content__time {
+    font-size: 1.2rem;
+  }
+  .content__p {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .content {
+    width: 25rem;
+  }
+  .content__bg-color {
+    width: 359px;
+    height: 360px;
+  }
+  .content__title {
+    font-size: 2.4rem;
+  }
+  .content__description {
+    font-size: 1.4rem;
+  }
+  .content__value {
+    font-size: 1.4rem;
+  }
+  .content__time {
+    font-size: 1.4rem;
+  }
+  .content__p {
+    font-size: 1.6rem;
+  }
+}
+
+/*# sourceMappingURL=mq-style.css.map */
