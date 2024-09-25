@@ -82,7 +82,7 @@ header.menu {
 }
 
 .main__img {
-   padding: 0 px-to-rem(20);   
+   padding: 0 px-to-rem(20);
    margin-top: px-to-rem(100);
    width: px-to-rem(300);
 }
@@ -101,23 +101,22 @@ header.menu {
    line-height: px-to-rem(23);
    padding: 0 px-to-rem(40);
    font-size: px-to-rem(14);
-   margin-bottom: 40px;
+   margin-bottom: px-to-rem(40);
 }
 
-.button {
-   margin-top: 30px;
+.main__section2 {
+   padding-bottom: px-to-rem(40);
 }
 
 article.products {
    position: relative;
-   width: px-to-rem(300);
+   margin: px-to-rem(20) auto;
+   width: px-to-rem(280);
    text-transform: uppercase;
-   padding: 30px;
-   margin-top: 20px;
    color: $White;
    font-weight: 300;
    background-color: black;
-   height: px-to-rem(110);
+   height: px-to-rem(103);
 }
 
 .products__title {
@@ -166,4 +165,51 @@ article.products {
 .products--fisheye {
    background: url('../images/mobile/image-fisheye.jpg') center no-repeat;
    background-size: contain;
+}
+
+.footer {
+   padding-top: px-to-rem(40);
+   width: px-to-rem(300);
+   text-align: center;
+   color: $White;
+   background-color: $Black;
+}
+
+.footer__logo-img {
+   width: 150px;
+   margin-bottom: px-to-rem(30);
+}
+
+.footer__list {
+   display: flex;
+   flex-flow: column nowrap;
+   gap: px-to-rem(25);
+   list-style: none;
+
+}
+
+.footer__link {
+   transition: text-decoration 1s ease-in-out;
+   text-decoration: none;
+   color: $White;
+
+   a:hover {
+      text-decoration: underline;
+   }
+}
+
+.footer__icons {
+   margin-top: px-to-rem(40);
+}
+
+.footer__icons-list {
+   display: flex;
+   justify-content: center;
+   gap: px-to-rem(16);
+}
+
+.footer__date {
+   font-size: px-to-rem(14);
+   margin: px-to-rem(20) 0 px-to-rem(40) 0;
+   color: $Dark-Gray;
 }

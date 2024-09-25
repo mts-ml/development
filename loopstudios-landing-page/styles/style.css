@@ -87,23 +87,22 @@ header.menu {
   line-height: 1.4375rem;
   padding: 0 2.5rem;
   font-size: 0.875rem;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
-.button {
-  margin-top: 30px;
+.main__section2 {
+  padding-bottom: 2.5rem;
 }
 
 article.products {
   position: relative;
-  width: 18.75rem;
+  margin: 1.25rem auto;
+  width: 17.5rem;
   text-transform: uppercase;
-  padding: 30px;
-  margin-top: 20px;
   color: hsl(0, 0%, 100%);
   font-weight: 300;
   background-color: black;
-  height: 6.875rem;
+  height: 6.4375rem;
 }
 
 .products__title {
@@ -152,6 +151,51 @@ article.products {
 .products--fisheye {
   background: url("../images/mobile/image-fisheye.jpg") center no-repeat;
   background-size: contain;
+}
+
+.footer {
+  padding-top: 2.5rem;
+  width: 18.75rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
+}
+
+.footer__logo-img {
+  width: 150px;
+  margin-bottom: 1.875rem;
+}
+
+.footer__list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5625rem;
+  list-style: none;
+}
+
+.footer__link {
+  transition: text-decoration 1s ease-in-out;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.footer__link a:hover {
+  text-decoration: underline;
+}
+
+.footer__icons {
+  margin-top: 2.5rem;
+}
+
+.footer__icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__date {
+  font-size: 0.875rem;
+  margin: 1.25rem 0 2.5rem 0;
+  color: hsl(0, 0%, 55%);
 }
 
 /*# sourceMappingURL=style.css.map */
