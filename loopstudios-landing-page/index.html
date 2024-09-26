@@ -11,6 +11,8 @@
 
   <link rel="stylesheet" href="styles/style.css">
 
+  <script src="index.js" defer></script>
+
 </head>
 
 <body>
@@ -18,20 +20,42 @@
 
     <div class="menu__logos">
       <h1 class="menu__tittle-hidden">loopstudios</h1>
-      <img src="./images/logo.svg" class="menu__title-img" alt="Logo written 'loopstudios'">
+      <a href="index.html" target="_self" rel="noopener noreferrer">
+        <img src="./images/logo.svg" class="menu__title-img" alt="Logo written 'loopstudios'">
+      </a>
 
       <img src="./images/icon-hamburger.svg" class="menu__hamburguer-img" alt="Icon of a hamburguer menu">
     </div>
 
-    <!-- <nav class="menu__nav">
+    <nav id="nav" class="hidden"> <!-- menu__nav -->
+      <div class="menu__logos">
+        <img src="./images/logo.svg" class="menu__title-img" alt="Logo written 'loopstudios'">
+
+        <img src="./images/icon-close.svg" class="menu__icon-x" alt="Icon of a 'X'">
+      </div>
+
       <ul class="menu__list">
-        <li class="menu__list-item">About</li>
-        <li class="menu__list-item">Careers</li>
-        <li class="menu__list-item">Events</li>
-        <li class="menu__list-item">Products</li>
-        <li class="menu__list-item">Support</li>
+        <li class="menu__list-item">
+          <a href="#" class="menu__link" target="_self" rel="noopener noreferrer">About</a>
+        </li>
+
+        <li class="menu__list-item">
+          <a href="#" class="menu__link" target="_self" rel="noopener noreferrer">Careers</a>
+        </li>
+
+        <li class="menu__list-item">
+          <a href="#" class="menu__link" target="_self" rel="noopener noreferrer">Events</a>
+        </li>
+
+        <li class="menu__list-item">
+          <a href="#" class="menu__link" target="_self" rel="noopener noreferrer">Products</a>
+        </li>
+
+        <li class="menu__list-item">
+          <a href="#" class="menu__link" target="_self" rel="noopener noreferrer">Support</a>
+        </li>
       </ul>
-    </nav> -->
+    </nav>
 
     <h2 class="menu__title">
       Immersive experiences that deliver
@@ -56,43 +80,66 @@
     </section>
 
     <section class="main__section2">
-      <div class="main__info">
-        <h2 class="main__title">
-          Our creations
-        </h2>
 
-        <button type="submit" class="button">See all</button>
+      <div class="main__info">
+        <h2 class="main__title">Our creations</h2>
+
+        <a href="#" class="main__link" target="_self" hreflang="en" rel="noopener noreferrer">See all</a>
       </div>
 
       <article class="products products--earth">
+        <img src="./images/mobile/image-deep-earth.jpg"
+        class="products__img" alt="Picture of the planet eart seen from outer space">
+
         <h3 class="products__title">Deep<br> earth</h3>
       </article>
 
       <article class="products products--arcade">
+        <img src="./images/mobile/image-night-arcade.jpg"
+        class="products__img" alt="Picture of an arcade">
+
         <h3 class="products__title">Night<br> arcade</h3>
       </article>
 
       <article class="products products--soccer">
+        <img src="./images/mobile/image-soccer-team.jpg"
+        class="products__img" alt="Picture of a boy with a red shirt playing football">
+
         <h3 class="products__title">Soccer<br> team VR</h3>
       </article>
 
       <article class="products products--grid">
+        <img src="./images/mobile/image-grid.jpg"
+        class="products__img" alt="Picture of a green car">
+
         <h3 class="products__title">The<br> grid</h3>
       </article>
 
       <article class="products products--vr">
+        <img src="./images/mobile/image-from-above.jpg"
+        class="products__img" alt="Picture of a road seen from above">
+
         <h3 class="products__title">From up<br> above VR</h3>
       </article>
 
       <article class="products products--borealis">
+        <img src="./images/mobile/image-pocket-borealis.jpg"
+        class="products__img" alt="Picture of the northern lights">
+
         <h3 class="products__title">Pocket<br> borealis</h3>
       </article>
 
       <article class="products products--curiosity">
+        <img src="./images/mobile/image-curiosity.jpg"
+        class="products__img" alt="Picture of a robot">
+
         <h3 class="products__title">The<br> curiosity</h3>
       </article>
 
       <article class="products products--fisheye">
+        <img src="./images/mobile/image-fisheye.jpg"
+        class="products__img" alt="Picture of the sky and trees in a scope">
+
         <h3 class="products__title">Make it<br> fisheye</h3>
       </article>
     </section>
@@ -104,23 +151,23 @@
 
       <ul class="footer__list">
         <li class="footer__list-item">
-          <a class="footer__link" href="#" target="_self" rel="noopener noreferrer">About</a>
+          <a class="footer__link" href="###" target="_self" rel="noopener noreferrer">About</a>
         </li>
 
         <li class="footer__list-item">
-          <a class="footer__link" href="#" target="_self" rel="noopener noreferrer">Careers</a>
+          <a class="footer__link" href="###" target="_self" rel="noopener noreferrer">Careers</a>
         </li>
 
         <li class="footer__list-item">
-          <a class="footer__link" href="#" target="_self" rel="noopener noreferrer">Events</a>
+          <a class="footer__link" href="###" target="_self" rel="noopener noreferrer">Events</a>
         </li>
 
         <li class="footer__list-item">
-          <a class="footer__link" href="#" target="_self" rel="noopener noreferrer">Products</a>
+          <a class="footer__link" href="###" target="_self" rel="noopener noreferrer">Products</a>
         </li>
 
         <li class="footer__list-item">
-          <a class="footer__link" href="#" target="_self" rel="noopener noreferrer">Support</a>
+          <a class="footer__link" href="###" target="_self" rel="noopener noreferrer">Support</a>
         </li>
       </ul>
     </div>
@@ -128,13 +175,13 @@
     <div class="footer__icons">
 
       <div class="footer__icons-list">
-        <img src="./images/icon-facebook.svg" alt="White Facebook icon">
+        <img src="./images/icon-facebook.svg" class="footer__icon-img" alt="White Facebook icon">
 
-        <img src="./images/icon-pinterest.svg" alt="White Pinterest icon">
+        <img src="./images/icon-pinterest.svg" class="footer__icon-img" alt="White Pinterest icon">
 
-        <img src="./images/icon-instagram.svg" alt="White instagram icon">
+        <img src="./images/icon-instagram.svg" class="footer__icon-img" alt="White instagram icon">
 
-        <img src="./images/icon-twitter.svg" alt="White Twitter icon">
+        <img src="./images/icon-twitter.svg" class="footer__icon-img" alt="White Twitter icon">
       </div>
 
       <p class="footer__date">© 2021 Loopstudios. All rights reserved.</p>
