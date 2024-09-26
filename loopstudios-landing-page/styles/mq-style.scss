@@ -51,3 +51,89 @@
       font-size: px-to-rem(19)
    }
 }
+
+@media screen and (min-width: px-to-rem(600)) {
+   header.menu {
+      width: px-to-rem(480);
+   }
+
+   .menu__nav {
+
+      .menu__title-img {
+         width: px-to-rem(180)
+      }
+
+      .menu__hamburguer-img {
+         height: 20px;
+         width: 25px;
+      }
+
+      .menu__icon-x {
+         width: px-to-rem(20);
+      }
+
+      .menu__list {
+         font-size: px-to-rem(20);
+         gap: px-to-rem(32);
+      }
+
+      .menu__link {
+
+         &::after {
+            bottom: -12px;
+         }
+      }
+   }
+
+   .menu__title {
+      font-size: px-to-rem(43);
+   }
+
+   .main {
+      width: px-to-rem(480);
+   }
+
+   .main__img {
+      width: px-to-rem(480);
+   }
+
+   .main__title {
+      font-size: px-to-rem(40);
+   }
+
+   .main__link {
+      padding: px-to-rem(10) px-to-rem(50);
+      font-size: px-to-rem(20);
+   }
+
+   .main__description {
+      font-size: px-to-rem(20);
+   }
+
+   article.products {
+      max-width: px-to-rem(450);
+      height: px-to-rem(166);
+   }
+
+   .products__title {
+      bottom: 37px;
+      left: 50px;
+      font-size: px-to-rem(28);
+   }
+
+   .footer {
+      width: px-to-rem(480);
+   }
+
+   .footer__logo-img {
+      width: px-to-rem(200);
+   }
+
+   .footer__list {
+      font-size: px-to-rem(22)
+   }
+
+   .footer__date {
+      font-size: px-to-rem(18);
+   }
+}
