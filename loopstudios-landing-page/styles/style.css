@@ -44,7 +44,7 @@ header.menu {
 }
 
 .menu__title-img {
-  width: 100px;
+  width: 6.25rem;
 }
 
 .menu__hamburguer-img {
@@ -193,7 +193,6 @@ article.products {
   background-color: black;
   height: 6.4375rem;
   overflow: hidden;
-  width: 100%;
 }
 article.products .products__img {
   max-width: 100%;
@@ -221,7 +220,7 @@ article.products .products__img:hover {
 }
 
 .footer__logo-img {
-  width: 150px;
+  width: 9.375rem;
   margin-bottom: 1.875rem;
 }
 

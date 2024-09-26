@@ -57,7 +57,7 @@ header.menu {
 }
 
 .menu__title-img {
-   width: 100px;
+   width: px-to-rem(100);
 }
 
 .menu__hamburguer-img {
@@ -217,7 +217,6 @@ article.products {
    background-color: black;
    height: px-to-rem(103);
    overflow: hidden;
-   width: 100%;
 
    .products__img {
       max-width: 100%;
@@ -247,7 +246,7 @@ article.products {
 }
 
 .footer__logo-img {
-   width: 150px;
+   width: px-to-rem(150);
    margin-bottom: px-to-rem(30);
 }
 
