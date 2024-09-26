@@ -1,0 +1,53 @@
+@function px-to-rem($px-value) {
+   @return $px-value / 16 * 1rem;
+}
+
+@media screen and (min-width: px-to-rem(375)) {
+   header.menu {
+      width: px-to-rem(358);
+   }
+
+   .menu__title-img {
+      width: px-to-rem(120)
+   }
+
+   .menu__hamburguer-img {
+      height: 15px;
+      width: 22px;
+   }
+
+   .menu__icon-x {
+      width: px-to-rem(15);
+   }
+
+   .main {
+      width: px-to-rem(358);
+   }
+
+   .main__img {
+      width: px-to-rem(358);
+   }
+
+   article.products {
+      max-width: px-to-rem(338);
+      height: px-to-rem(124);
+   }
+
+   .products__title {
+      bottom: 26px;
+      left: 30px;
+      font-size: px-to-rem(22);
+   }
+
+   .footer {
+      width: px-to-rem(358);
+   }
+
+   .footer__logo-img {
+      width: px-to-rem(170);
+   }
+
+   .footer__list {
+      font-size: px-to-rem(19)
+   }
+}

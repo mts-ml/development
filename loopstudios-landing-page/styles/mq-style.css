@@ -1,0 +1,41 @@
+@media screen and (min-width: 23.4375rem) {
+  header.menu {
+    width: 22.375rem;
+  }
+  .menu__title-img {
+    width: 7.5rem;
+  }
+  .menu__hamburguer-img {
+    height: 15px;
+    width: 22px;
+  }
+  .menu__icon-x {
+    width: 0.9375rem;
+  }
+  .main {
+    width: 22.375rem;
+  }
+  .main__img {
+    width: 22.375rem;
+  }
+  article.products {
+    max-width: 21.125rem;
+    height: 7.75rem;
+  }
+  .products__title {
+    bottom: 26px;
+    left: 30px;
+    font-size: 1.375rem;
+  }
+  .footer {
+    width: 22.375rem;
+  }
+  .footer__logo-img {
+    width: 10.625rem;
+  }
+  .footer__list {
+    font-size: 1.1875rem;
+  }
+}
+
+/*# sourceMappingURL=mq-style.css.map */
