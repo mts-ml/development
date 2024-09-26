@@ -21,6 +21,7 @@ body {
 }
 
 header.menu {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   position: relative;
@@ -51,6 +52,71 @@ header.menu {
   width: 18px;
   cursor: pointer;
   opacity: 0.75;
+  transition: transform 0.5s ease-in-out;
+}
+.menu__hamburguer-img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
+  opacity: 0.95;
+  padding: 1.875rem 1.25rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 9.375rem;
+}
+.menu__nav .menu__icon-x {
+  width: 0.9375rem;
+  transition: transform 0.5s ease-in-out;
+}
+.menu__nav .menu__icon-x:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+.menu__nav .menu__list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  list-style-type: none;
+  padding-top: 20px;
+}
+.menu__nav .menu__list-item {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.menu__nav .menu__link {
+  position: relative;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.menu__nav .menu__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 0.125rem;
+  background-color: hsl(0, 0%, 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+.menu__nav .menu__link:hover::after {
+  transition: transform 0.4s ease-in-out;
+  transform: scaleX(1);
 }
 
 .menu__title {
@@ -91,66 +157,59 @@ header.menu {
 }
 
 .main__section2 {
-  padding-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 8.125rem;
+}
+
+.main__link {
+  position: absolute;
+  bottom: 5.1875rem;
+  left: 50%;
+  transform: translate(-50%);
+  text-transform: uppercase;
+  color: hsl(0, 0%, 0%);
+  border: 0.09375rem solid black;
+  padding: 0.4375rem 2.5rem;
+  text-decoration: none;
+  font-size: 0.75rem;
+  line-height: 1.4375rem;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  transition: background-color 0.3s ease-in-out;
+}
+.main__link:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
 }
 
 article.products {
   position: relative;
   margin: 1.25rem auto;
-  width: 17.5rem;
+  max-width: 17.5rem;
   text-transform: uppercase;
   color: hsl(0, 0%, 100%);
   font-weight: 300;
   background-color: black;
   height: 6.4375rem;
+  overflow: hidden;
+  width: 100%;
+}
+article.products .products__img {
+  max-width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+article.products .products__img:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.3) rotate(5deg);
 }
 
 .products__title {
   position: absolute;
-  bottom: 25px;
+  bottom: 20px;
   left: 17px;
   font-weight: 300;
   font-size: 1.125rem;
-}
-
-.products--earth {
-  background: url("../images/mobile/image-deep-earth.jpg") center no-repeat;
-  background-size: contain;
-}
-
-.products--arcade {
-  background: url("../images/mobile/image-night-arcade.jpg") center no-repeat;
-  background-size: contain;
-}
-
-.products--soccer {
-  background: url("../images/mobile/image-soccer-team.jpg") center no-repeat;
-  background-size: contain;
-}
-
-.products--grid {
-  background: url("../images/mobile/image-grid.jpg") center no-repeat;
-  background-size: contain;
-}
-
-.products--vr {
-  background: url("../images/mobile/image-from-above.jpg") center no-repeat;
-  background-size: contain;
-}
-
-.products--borealis {
-  background: url("../images/mobile/image-pocket-borealis.jpg") center no-repeat;
-  background-size: contain;
-}
-
-.products--curiosity {
-  background: url("../images/mobile/image-curiosity.jpg") center no-repeat;
-  background-size: contain;
-}
-
-.products--fisheye {
-  background: url("../images/mobile/image-fisheye.jpg") center no-repeat;
-  background-size: contain;
 }
 
 .footer {
@@ -174,12 +233,27 @@ article.products {
 }
 
 .footer__link {
-  transition: text-decoration 1s ease-in-out;
+  position: relative;
   text-decoration: none;
   color: hsl(0, 0%, 100%);
 }
-.footer__link a:hover {
-  text-decoration: underline;
+
+.footer__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 0.125rem;
+  background-color: hsl(0, 0%, 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+a:hover::after {
+  transition: transform 0.4s ease-in-out;
+  transform: scaleX(1);
 }
 
 .footer__icons {
@@ -190,6 +264,15 @@ article.products {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.footer__icon-img {
+  transition: transform 0.4s ease-in-out;
+}
+.footer__icon-img:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .footer__date {
