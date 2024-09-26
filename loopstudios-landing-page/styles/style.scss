@@ -108,7 +108,7 @@ header.menu {
       flex-flow: column nowrap;
       gap: px-to-rem(16);
       list-style-type: none;
-      padding-top: 20px;
+      padding-top: px-to-rem(20);
    }
 
    .menu__list-item {
