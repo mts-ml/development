@@ -12,3 +12,16 @@ hamburguer.addEventListener('click', () => {
 iconX.addEventListener('click', () => {
    nav.classList.replace('menu__nav', 'hidden')
 })
+
+function checkViewportSize() {
+   if (window.matchMedia('(min-width: 992px)').matches) {
+      nav.classList.replace('hidden', 'menu__nav')      
+   } else {
+      nav.classList.replace('menu__nav', 'hidden')
+   }
+}
+
+checkViewportSize()
+
+// Monitor window resize
+window.addEventListener('resize', checkViewportSize);
