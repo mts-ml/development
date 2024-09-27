@@ -60,28 +60,29 @@
    .menu__title-img {
       width: px-to-rem(200)
    }
-   
+
    .menu__hamburguer-img {
       height: 18px;
       width: 27px;
    }
 
    .menu__nav {
+      gap: 7rem;
+   }
 
-      .menu__icon-x {
-         width: px-to-rem(20);
-      }
+   .menu__icon-x {
+      width: px-to-rem(20);
+   }
 
-      .menu__list {
-         font-size: px-to-rem(20);
-         gap: px-to-rem(32);
-      }
+   .menu__list {
+      font-size: px-to-rem(18);
+      gap: px-to-rem(27);
+   }
 
-      .menu__link {
+   .menu__link {
 
-         &::after {
-            bottom: -12px;
-         }
+      &::after {
+         bottom: -12px;
       }
    }
 
@@ -135,5 +136,190 @@
 
    .footer__date {
       font-size: px-to-rem(18);
+   }
+}
+
+@media screen and (min-width: px-to-rem(992)) {
+
+   .wrapper {
+      height: auto;
+      margin: 0 auto;
+      width: px-to-rem(719);
+      background-color: gray;
+   }
+
+   header.menu {
+      position: relative;
+      width: px-to-rem(976);
+      background: url('../images/desktop/image-hero.jpg') no-repeat;
+      background-size: contain;
+      padding: px-to-rem(60) px-to-rem(150);
+      gap: 0;
+      height: px-to-rem(441);
+   }
+
+   .menu__nav {
+      padding: 0;
+      gap: 0;
+      width: 0;
+      height: 0;
+      top: px-to-rem(67);
+      left: 509px;
+      opacity: 1;
+   }
+
+   .menu__title-img {
+      width: px-to-rem(100);
+   }
+
+   .menu__hamburguer-img {
+      display: none;
+   }
+
+   #menu-title {
+      display: none;
+   }
+
+   .menu__icon-x {
+      display: none;
+   }
+
+   .menu__list {
+      flex-flow: row nowrap;
+      padding-top: 0;
+   }
+
+   .menu__list-item {
+      text-transform: capitalize;
+      font-size: px-to-rem(16);
+   }
+
+   .main__info {
+      padding: 0 7rem;
+   }
+
+   .menu__title {
+      position: absolute;
+      padding-left: px-to-rem(30);
+      top: px-to-rem(161);
+      width: px-to-rem(380);
+      line-height: px-to-rem(45);
+   }
+
+   .main {
+      width: px-to-rem(976);
+   }
+
+   .main__section {
+      position: relative;
+      display: flex;
+   }
+
+   .main__img-title {
+      position: absolute;
+      align-self: flex-end;
+      background-color: white;
+      width: px-to-rem(400);
+      right: 20px;
+   }
+
+   .main__img {
+      width: px-to-rem(550);
+      margin-left: px-to-rem(138);
+   }
+
+   .main__title {
+      font-size: px-to-rem(30);
+      padding-right: px-to-rem(100);
+   }
+
+   .main__description {
+      font-size: px-to-rem(13.5);
+      margin-bottom: 0;
+      width: px-to-rem(397);
+   }
+
+   .main__section2 {
+      margin-top: px-to-rem(80);
+      padding-bottom: px-to-rem(30);
+   }
+
+   .main__info {
+      display: flex;
+      padding-left: px-to-rem(120);
+   }
+
+   .main__title {
+      margin-left: px-to-rem(5);
+   }
+
+   .main__link {
+      padding: px-to-rem(10) px-to-rem(35);
+      height: px-to-rem(40);
+      font-size: px-to-rem(13);
+      bottom: 58px;
+      left: px-to-rem(810);
+   }
+
+   .mini-wrapper {
+      width: px-to-rem(725);
+      margin-left: px-to-rem(155);
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: auto;
+      gap: 1rem;
+      grid-template-areas:
+         "earth  arcade    soccer    gridd"
+         " fa   borealis  curiosity  fisheye"
+      ;
+   }
+
+   article.products {
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0);
+      height: 100%;
+      width: 100%;
+
+      .products--earth {
+         grid-area: earth;
+      }
+
+      .products--arcade {
+         grid-area: arcade;
+      }
+
+      .products--soccer {
+         grid-area: soccer;
+      }
+
+      .products--grid {
+         grid-area: gridd;
+      }
+
+      .products--vr {
+         grid-area: fa;
+      }
+
+      .products--borealis {
+         grid-area: borealis;
+      }
+
+      .products--curiosity {
+         grid-area: curiosity;
+      }
+
+      .products--fisheye {
+         grid-area: fisheye;
+      }
+
+      picture {
+         overflow: hidden;
+      }
+   }
+
+   .products__title {
+      bottom: 25px;
+      left: 24px;
+      font-size: px-to-rem(20);
    }
 }
