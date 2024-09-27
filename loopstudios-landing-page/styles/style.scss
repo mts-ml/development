@@ -91,55 +91,56 @@ header.menu {
    display: flex;
    flex-flow: column nowrap;
    gap: px-to-rem(150);
+}
 
-   .menu__icon-x {
-      width: px-to-rem(15);
+.menu__icon-x {
+   width: px-to-rem(15);
+   transition: transform .5s ease-in-out;
+
+   &:hover {
+      cursor: pointer;
+      transform: scale(1.4);
       transition: transform .5s ease-in-out;
-
-      &:hover {
-         cursor: pointer;
-         transform: scale(1.4);
-         transition: transform .5s ease-in-out;
-      }
-   }
-
-   .menu__list {
-      display: flex;
-      flex-flow: column nowrap;
-      gap: px-to-rem(16);
-      list-style-type: none;
-      padding-top: px-to-rem(20);
-   }
-
-   .menu__list-item {
-      text-transform: uppercase;
-      font-weight: 300;
-   }
-
-   .menu__link {
-      position: relative;
-      color: $White;
-      text-decoration: none;
-
-      &::after {
-         content: '';
-         position: absolute;
-         left: 0;
-         bottom: -5px;
-         width: 100%;
-         height: px-to-rem(2);
-         background-color: $White;
-         transform: scaleX(0);
-         transform-origin: left;
-         transition: transform .4s ease-in-out;
-      }
-
-      &:hover::after {
-         transition: transform .4s ease-in-out;
-         transform: scaleX(1);
-      }
    }
 }
+
+.menu__list {
+   display: flex;
+   flex-flow: column nowrap;
+   gap: px-to-rem(16);
+   list-style-type: none;
+   padding-top: px-to-rem(20);
+}
+
+.menu__list-item {
+   text-transform: uppercase;
+   font-weight: 300;
+}
+
+.menu__link {
+   position: relative;
+   color: $White;
+   text-decoration: none;
+
+   &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: px-to-rem(2);
+      background-color: $White;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .4s ease-in-out;
+   }
+
+   &:hover::after {
+      transition: transform .4s ease-in-out;
+      transform: scaleX(1);
+   }
+}
+
 
 .menu__title {
    border: px-to-rem(1) solid white;

@@ -77,32 +77,36 @@ header.menu {
   flex-flow: column nowrap;
   gap: 9.375rem;
 }
-.menu__nav .menu__icon-x {
+
+.menu__icon-x {
   width: 0.9375rem;
   transition: transform 0.5s ease-in-out;
 }
-.menu__nav .menu__icon-x:hover {
+.menu__icon-x:hover {
   cursor: pointer;
   transform: scale(1.4);
   transition: transform 0.5s ease-in-out;
 }
-.menu__nav .menu__list {
+
+.menu__list {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
   list-style-type: none;
   padding-top: 1.25rem;
 }
-.menu__nav .menu__list-item {
+
+.menu__list-item {
   text-transform: uppercase;
   font-weight: 300;
 }
-.menu__nav .menu__link {
+
+.menu__link {
   position: relative;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
-.menu__nav .menu__link::after {
+.menu__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -114,7 +118,7 @@ header.menu {
   transform-origin: left;
   transition: transform 0.4s ease-in-out;
 }
-.menu__nav .menu__link:hover::after {
+.menu__link:hover::after {
   transition: transform 0.4s ease-in-out;
   transform: scaleX(1);
 }
