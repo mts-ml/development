@@ -273,9 +273,83 @@
     flex-flow: row nowrap;
     font-size: 0.9375rem;
   }
+  .footer__icons-list {
+    justify-content: flex-end;
+  }
   .footer__date {
     font-size: 0.9375rem;
     text-align: left;
+  }
+}
+@media screen and (min-width: 75rem) {
+  header.menu {
+    width: 73.75rem;
+    height: 33.3125rem;
+  }
+  .menu__title-img {
+    width: 11.25rem;
+  }
+  .menu__list {
+    padding: 0 0 0 13.75rem;
+  }
+  .menu__title {
+    top: 11.875rem;
+    font-size: 3.4rem;
+    line-height: 3.5rem;
+    width: 32.1875rem;
+  }
+  .main {
+    width: 73.75rem;
+  }
+  .main__img-title {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+    width: 35rem;
+    bottom: 4px;
+    height: 16.875rem;
+  }
+  .main__img {
+    width: 37.5rem;
+  }
+  .main__title {
+    font-size: 2.1875rem;
+    padding: 2.8125rem 0 0 3.875rem;
+    text-align: left;
+  }
+  .main__description {
+    padding-left: 4.375rem;
+    width: 31.25rem;
+  }
+  .main__section2 {
+    width: 73.75rem;
+    padding-bottom: 3.125rem;
+  }
+  .main__title--position {
+    padding-left: 1.875rem;
+  }
+  .main__link {
+    left: 988px;
+    bottom: 50px;
+  }
+  .mini-wrapper {
+    margin-top: 2.5rem;
+    width: 56.5625rem;
+  }
+  .products__title {
+    font-size: 1.75rem;
+    left: 32px;
+    bottom: 32px;
+  }
+  .footer {
+    width: 73.75rem;
+    padding: 0 7.5rem;
+  }
+  .footer__logo-img {
+    margin-left: 2.5rem;
+  }
+  .footer__list {
+    margin-left: 2.5rem;
   }
 }
 
