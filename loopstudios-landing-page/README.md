@@ -45,6 +45,8 @@ Users should be able to:
 
 Learned to rotate images: `transform: scale(1.3) rotate(5deg);`
 
+And learned `pointer-events: none;`
+
 
 ## Author
 
