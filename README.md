@@ -91,3 +91,10 @@ Each project in this repository corresponds to a specific challenge from Fronten
    - [Live Demo](https://mts-ml.github.io/development/nft-preview-card-component/index.html)
    - [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
 <br>
+
+
+13. **Loopstudios landing page**
+   - [Challenge Repository](https://github.com/mts-ml/development/tree/main/loopstudios-landing-page)
+   - [Live Demo](https://mts-ml.github.io/development/loopstudios-landing-page/index.html)
+   - [Frontend Mentor Challenge](https://www.frontendmentor.io/learning-paths/advanced-css-techniques-vdOtKjIC4V/steps/66ed77985832c087f28329a7/challenge/start)
+<br>
