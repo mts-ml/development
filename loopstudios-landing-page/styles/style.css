@@ -17,7 +17,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background-color: #222;
+  background-color: #333;
 }
 
 header.menu {
