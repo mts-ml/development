@@ -141,13 +141,6 @@
 
 @media screen and (min-width: px-to-rem(992)) {
 
-   .wrapper {
-      height: auto;
-      margin: 0 auto;
-      width: px-to-rem(719);
-      background-color: gray;
-   }
-
    header.menu {
       position: relative;
       width: px-to-rem(976);
@@ -157,7 +150,7 @@
       gap: 0;
       height: px-to-rem(441);
    }
-
+   
    .menu__nav {
       padding: 0;
       gap: 0;
@@ -169,7 +162,7 @@
    }
 
    .menu__title-img {
-      width: px-to-rem(100);
+      width: px-to-rem(130);
    }
 
    .menu__hamburguer-img {
@@ -186,12 +179,12 @@
 
    .menu__list {
       flex-flow: row nowrap;
-      padding-top: 0;
+      padding: 0 0 0 px-to-rem(55);
    }
 
    .menu__list-item {
       text-transform: capitalize;
-      font-size: px-to-rem(16);
+      font-size: px-to-rem(14);
    }
 
    .main__info {
@@ -264,6 +257,7 @@
    .mini-wrapper {
       width: px-to-rem(725);
       margin-left: px-to-rem(155);
+      margin-bottom: px-to-rem(150);
       display: grid;
       grid-template-columns: repeat(4, auto);
       grid-template-rows: auto;
@@ -279,6 +273,19 @@
       background-color: rgba(0, 0, 0, 0);
       height: 100%;
       width: 100%;
+
+      .products__img {
+         
+         &:hover {
+            transition: all .4s ease-in-out;
+            opacity: .2;
+         }
+      }
+
+      &:hover {
+         cursor: pointer;
+         color: black;
+      }
 
       .products--earth {
          grid-area: earth;
@@ -318,8 +325,39 @@
    }
 
    .products__title {
+      pointer-events: none;
       bottom: 25px;
       left: 24px;
       font-size: px-to-rem(20);
    }
+
+   .footer {
+      width: px-to-rem(976);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 px-to-rem(155);
+      gap: px-to-rem(210);
+   }
+
+   .footer__link {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+   }
+
+   .footer__logo-img {
+      width: px-to-rem(150);
+   }
+
+   .footer__list {
+      flex-flow: row nowrap;
+      font-size: px-to-rem(15);
+   }
+
+   .footer__date {
+      font-size: px-to-rem(15);
+      text-align: left;
+   }
+
 }
