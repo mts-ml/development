@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+textarea,
+select {
+  font-family: "League Spartan", sans-serif;
+  font-size: 0.75rem;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 18.75rem;
+}
+
+.hidden {
+  position: absolute;
+  top: -100px;
+  transform: translateY(-100%);
+  transition: transform 400ms ease-in-out;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu__picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.menu__bg {
+  display: none;
+}
+
+.menu__bg.active {
+  display: inline-block;
+  width: 18.75rem;
+}
+
+.menu__imgs {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.875rem 1.25rem;
+}
+
+.menu__hamburguer {
+  transition: transform 400ms ease-in-out;
+}
+.menu__hamburguer:hover {
+  transform: scale(1.2);
+  transition: transform 400ms ease-in-out;
+  cursor: pointer;
+}
+
+.menu__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding-top: 1.875rem;
+}
+
+.arrow {
+  position: relative;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow__left,
+.arrow__right {
+  position: absolute;
+  right: 43px;
+  bottom: 3px;
+  height: 2.875rem;
+  background-color: black;
+  padding: 0.9375rem 1.125rem;
+}
+.arrow__left:hover,
+.arrow__right:hover {
+  background-color: hsl(0, 0%, 27%);
+}
+
+.arrow__right {
+  right: 0;
+}
+
+.menu__nav {
+  position: absolute;
+  padding: 1.875rem 1.25rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  transform: translateY(0);
+  transition: transform 500ms ease-in-out;
+}
+
+.menu__icon-x {
+  transition: transform 400ms ease-in-out;
+  cursor: pointer;
+}
+.menu__icon-x:hover {
+  transform: scale(1.3);
+  transition: transform 400ms ease-in-out;
+}
+
+.menu__list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.menu__link {
+  position: relative;
+  color: hsl(0, 0%, 0%);
+  font-weight: bold;
+  text-transform: lowercase;
+  font-size: 0.84375rem;
+  text-decoration: none;
+}
+.menu__link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 0.15625rem;
+  background-color: hsl(0, 0%, 0%);
+  transition: width 400ms ease-in-out;
+}
+.menu__link:hover::after {
+  width: 100%;
+  transition: width 400ms ease-in-out;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: inline-block;
+  padding: 2.5rem 1.25rem 0;
+}
+
+.section__title {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 0.9375rem;
+}
+
+.section__description {
+  color: hsl(0, 0%, 63%);
+  line-height: 1.2rem;
+  font-size: 0.8125rem;
+  margin-bottom: 1.875rem;
+}
+
+.section__link {
+  margin: 0 1.25rem 2.5rem;
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 1rem;
+  letter-spacing: 0.625rem;
+  font-weight: bold;
+  transition: opacity 400ms ease-in-out;
+}
+.section__link:hover {
+  opacity: 0.5;
+  transition: opacity 400ms ease-in-out;
+}
+
+.furniture__dark {
+  width: 18.75rem;
+}
+
+.furniture__info {
+  padding: 2.5rem 1.25rem;
+}
+
+.furniture__title {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.furniture__description {
+  color: hsl(0, 0%, 63%);
+  font-size: 0.8125rem;
+  line-height: 1.2rem;
+}
+
+.furniture__white {
+  width: 18.75rem;
+}
+
+/*# sourceMappingURL=style.css.map */

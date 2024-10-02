@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+@function px-to-rem($px-value) {
+   @return $px-value / 16 * 1rem
+}
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+$Dark-Gray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$Very-Dark-Gray: hsl(0, 0%, 27%);
+
+body,
+button,
+textarea,
+select {
+   font-family: "League Spartan", sans-serif;
+   font-size: px-to-rem(12);
+}
+
+body {
+   display: grid;
+   place-items: center;
+   height: 100vh;
+}
+
+.wrapper {
+   width: px-to-rem(300);
+}
+
+.hidden {
+   position: absolute;
+   top: -100px;
+   transform: translateY(-100%);
+   transition: transform 400ms ease-in-out;
+}
+
+.menu {
+   position: relative;
+}
+
+.menu__picture {
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .4); 
+      z-index: 0;
+   }
+}
+
+.menu__bg {
+   display: none;
+}
+
+.menu__bg.active {
+   display: inline-block;
+   width: px-to-rem(300);
+}
+
+.menu__imgs {
+   position: absolute;
+   top: 0;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: px-to-rem(30) px-to-rem(20);
+}
+
+.menu__hamburguer {
+   transition: transform 400ms ease-in-out;
+
+   &:hover {
+      transform: scale(1.2);
+      transition: transform 400ms ease-in-out;
+      cursor: pointer;
+   }
+}
+
+.menu__logo {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%);
+   padding-top: px-to-rem(30);
+}
+
+.arrow {
+   position: relative;
+
+   &:hover {
+      cursor: pointer;
+   }
+
+}
+
+.arrow__left,
+.arrow__right {
+   position: absolute;
+   right: 43px;
+   bottom: 3px;
+   height: px-to-rem(46);
+   background-color: black;
+   padding: px-to-rem(15) px-to-rem(18);
+
+   &:hover {
+      background-color: $Very-Dark-Gray;
+   }
+}
+
+.arrow__right {
+   right: 0;
+}
+
+
+
+.menu__nav {
+   position: absolute;
+   padding: px-to-rem(30) px-to-rem(20);
+   width: 100%;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   top: 0;
+   transform: translateY(0);
+   transition: transform 500ms ease-in-out; 
+}
+
+.menu__icon-x {
+   transition: transform 400ms ease-in-out;
+   cursor: pointer;
+
+   &:hover {
+      transform: scale(1.3);
+      transition: transform 400ms ease-in-out;
+   }
+}
+
+.menu__list {
+   display: flex;
+   gap: 1rem;
+   list-style: none;
+}
+
+.menu__link {
+   position: relative;
+   color: $Black;
+   font-weight: bold;
+   text-transform: lowercase;
+   font-size: px-to-rem(13.5);
+   text-decoration: none;
+
+   &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 0;
+      height: px-to-rem(2.5);
+      background-color: $Black;
+      transition: width 400ms ease-in-out;
+   }
+
+   &:hover::after {
+      width: 100%;
+      transition: width 400ms ease-in-out;
+   }
+}
+
+.section {
+   display: none;
+}
+
+.section.active {
+   display: inline-block;
+   padding: px-to-rem(40) px-to-rem(20) 0;
+}
+
+.section__title {
+   font-size: 1.8rem;
+   line-height: 2rem;
+   margin-bottom: px-to-rem(15);
+}
+
+.section__description {
+   color: $Dark-Gray;
+   line-height: 1.2rem;
+   font-size: px-to-rem(13);
+   margin-bottom: px-to-rem(30);
+}
+
+.section__link {
+   margin: 0 px-to-rem(20) px-to-rem(40);
+   text-decoration: none;
+   color: black;
+   display: inline-flex;
+   align-items: center;
+   text-transform: uppercase;
+   gap: 1rem;
+   letter-spacing: px-to-rem(10);
+   font-weight: bold;
+   transition: opacity 400ms ease-in-out;
+
+   &:hover {
+      opacity: .5;
+      transition: opacity 400ms ease-in-out;
+   }
+}
+
+
+
+.main {
+   
+}
+
+.furniture__dark {
+   width: px-to-rem(300);
+}
+
+.furniture__info {
+   padding: px-to-rem(40) px-to-rem(20);
+}
+
+.furniture__title {
+   text-transform: uppercase;
+   font-size: px-to-rem(12);
+   letter-spacing: px-to-rem(4);
+   margin-bottom: px-to-rem(20);
+}
+
+.furniture__description {
+   color: $Dark-Gray;
+   font-size: px-to-rem(13);
+   line-height: 1.2rem;
+}
+
+.furniture__white {
+   width: px-to-rem(300);
+}
