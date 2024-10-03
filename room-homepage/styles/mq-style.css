@@ -15,7 +15,7 @@
   }
   .menu__bg.active {
     width: 35.5rem;
-    height: 25.625rem;
+    height: 32.9375rem;
   }
   .menu__imgs {
     width: 10%;
@@ -24,26 +24,31 @@
     display: none;
   }
   .menu__logo {
-    left: 65px;
-    width: 2.8125rem;
+    top: 15px;
+    left: 75px;
+    width: 3.4375rem;
   }
   .arrow__left,
   .arrow__right {
-    right: -66px;
-    height: 3.75rem;
+    right: -65px;
+    height: 3.6875rem;
     padding: 1.25rem 1.6875rem;
   }
   .arrow__right {
-    right: -132px;
+    right: -130px;
   }
   .menu__nav {
     width: 20%;
-    left: 6.75rem;
+    left: 115px;
+    top: 13px;
     background-color: rgba(255, 255, 255, 0);
     transition: transform 0ms;
   }
   .menu__icon-x {
     display: none;
+  }
+  .menu__list {
+    gap: 1.5rem;
   }
   .menu__link {
     color: white;
@@ -63,14 +68,17 @@
   }
   .section__description {
     margin: 0.625rem 4.375rem 0.625rem;
+    font-size: 0.9375rem;
   }
   .section__link {
-    margin: 0.625rem 4.375rem;
+    font-size: 0.8125rem;
+    margin: 1.25rem 4.375rem;
   }
   .furniture {
     display: flex;
   }
   .furniture__dark, .furniture__white {
+    width: 18.75rem;
     margin-top: -3px;
   }
   .furniture__info {
@@ -97,7 +105,7 @@
   .arrow__right {
     right: -82px;
     height: 5rem;
-    padding: 1.875rem 2.1875rem;
+    padding: 1.875rem 2.25rem;
   }
   .arrow__right {
     right: -164px;
@@ -120,7 +128,7 @@
     margin-top: 0.9375rem;
   }
   .section__link {
-    margin-top: 0.9375rem;
+    margin-top: 1.875rem;
   }
   .furniture__dark {
     width: 25rem;
