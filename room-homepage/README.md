@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- [Preview Site](https://your-live-site-url.com)
+- [Preview Site](https://room-homepage-xi-jet.vercel.app/)
 
 ## My process
 
