@@ -73,3 +73,19 @@ leftArrow.addEventListener('click', () => {
 
 updateImage()
 updateText()
+
+
+function checkViewportSize() {
+   if (window.matchMedia('(min-width: 992px)').matches) {
+      nav.classList.replace('hidden', 'menu__nav')
+      divPicture.classList.remove('menu__picture')
+
+   } else {
+      nav.classList.replace('menu__nav', 'hidden')
+   }
+}
+
+checkViewportSize()
+
+// Monitor window resize
+window.addEventListener('resize', checkViewportSize);
