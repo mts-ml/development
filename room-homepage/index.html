@@ -11,6 +11,8 @@
 
   <link rel="stylesheet" href="styles/style.css">
 
+  <link rel="stylesheet" href="styles/mq-style.css">
+
   <script src="index.js" defer></script>
 
 </head>
@@ -19,14 +21,22 @@
   <div class="wrapper">
 
     <header class="menu">
+
       <!-- class="menu__picture" -->
       <picture>
+        <source media="(min-width: 992px)" srcset="./images/desktop-image-hero-1.jpg">
         <img class="menu__bg" src="./images/mobile-image-hero-1.jpg"
           alt="Picture of a living room with 2 white chairs and a bonsai tree above a table.">
+      </picture>
 
+      <picture>
+        <source media="(min-width: 992px)" srcset="./images/desktop-image-hero-2.jpg">
         <img class="menu__bg" src="./images/mobile-image-hero-2.jpg"
           alt="Picture of three chairs, one yellow, other beige and the last one white.">
+      </picture>
 
+      <picture>
+        <source media="(min-width: 992px)" srcset="./images/desktop-image-hero-3.jpg">
         <img class="menu__bg" src="./images/mobile-image-hero-3.jpg" alt="Picture of a black chair on its side.">
       </picture>
 
@@ -66,41 +76,43 @@
         </ul>
       </nav>
 
-      <section class="section">
-        <h1 class="section__title">Discover innovative ways to decorate</h1>
+      <div class="section__wrapper">
+        <section class="section">
+          <h1 class="section__title">Discover innovative ways to decorate</h1>
 
-        <p class="section__description">
-          We provide unmatched quality, comfort, and style for property owners across the country.
-          Our experts combine form and function in bringing your vision to life. Create a room in your
-          own style with our collection and make your property a reflection of you and what you love.
-        </p>
-      </section>
+          <p class="section__description">
+            We provide unmatched quality, comfort, and style for property owners across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+        </section>
 
-      <section class="section">
-        <h1 class="section__title">We are available all across the globe</h1>
+        <section class="section">
+          <h1 class="section__title">We are available all across the globe</h1>
 
-        <p class="section__description">
-          With stores all over the world, it's easy for you to find furniture for your home or place of business.
-          Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
-          store locator. Any questions? Don't hesitate to contact us today.
-        </p>
-      </section>
+          <p class="section__description">
+            With stores all over the world, it's easy for you to find furniture for your home or place of business.
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+        </section>
 
-      <section class="section">
-        <h1 class="section__title">Manufactured with the best materials</h1>
+        <section class="section">
+          <h1 class="section__title">Manufactured with the best materials</h1>
 
-        <p class="section__description">
-          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
-          to ensure that every product is made as perfect and as consistent as possible. With three decades of
-          experience in this industry, we understand what customers want for their home and office.
-        </p>
-      </section>
+          <p class="section__description">
+            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+        </section>
 
-      <a class="section__link" href="###" target="_self" rel="noopener noreferrer">
-        <span class="section__span">Shop now</span>
+        <a class="section__link" href="###" target="_self" rel="noopener noreferrer">
+          <span class="section__span">Shop now</span>
 
-        <img class="section__arrow" src="./images/icon-arrow.svg" alt="An arrow pointing to the right">
-      </a>
+          <img class="section__arrow" src="./images/icon-arrow.svg" alt="An arrow pointing to the right">
+        </a>
+      </div>
     </header>
 
     <main class="main">
