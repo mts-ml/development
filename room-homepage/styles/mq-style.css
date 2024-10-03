@@ -1,0 +1,80 @@
+@media screen and (min-width: 62rem) {
+  body {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  .wrapper {
+    width: 62.5rem;
+  }
+  .menu {
+    display: flex;
+  }
+  .menu__bg.active {
+    width: 35.5rem;
+    height: 25.625rem;
+  }
+  .menu__hamburguer {
+    display: none;
+  }
+  .menu__logo {
+    left: 65px;
+    width: 2.8125rem;
+  }
+  .arrow__left,
+  .arrow__right {
+    right: -66px;
+    height: 3.75rem;
+    padding: 1.25rem 1.6875rem;
+  }
+  .arrow__right {
+    right: -132px;
+  }
+  .menu__nav {
+    left: 6.75rem;
+    background-color: rgba(255, 255, 255, 0);
+    transition: transform 0ms;
+  }
+  .menu__icon-x {
+    display: none;
+  }
+  .menu__link {
+    color: white;
+    font-weight: 500;
+  }
+  .menu__link::after {
+    background-color: white;
+  }
+  .section.active {
+    padding: 0;
+  }
+  .section__title {
+    margin: 4.375rem 4.375rem 0.625rem;
+    padding: 0;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+  }
+  .section__description {
+    margin: 0.625rem 4.375rem 0.625rem;
+  }
+  .section__link {
+    margin: 0.625rem 4.375rem;
+  }
+  .furniture {
+    display: flex;
+  }
+  .furniture__dark, .furniture__white {
+    margin-top: -3px;
+  }
+  .furniture__info {
+    padding: 3.125rem;
+  }
+  .furniture__title {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=mq-style.css.map */
