@@ -239,6 +239,7 @@ body {
    color: $Dark-Gray;
    font-size: px-to-rem(13);
    line-height: 1.2rem;
+   font-weight: 500;
 }
 
 
@@ -307,5 +308,95 @@ body {
    .furniture__description {
       font-size: px-to-rem(14);
    }
+}
 
+@media screen and (min-width: px-to-rem(480)) {
+   .wrapper {
+      width: px-to-rem(463);
+   }
+
+   .menu__bg.active {
+      width: px-to-rem(463);
+   }
+
+   .menu__imgs {
+      padding: px-to-rem(40) px-to-rem(30);
+   }
+
+   .menu__logo {
+      top: 10px;
+   }
+
+   .arrow__left,
+   .arrow__right {
+      position: absolute;
+      right: 65px;
+      bottom: 3px;
+      height: px-to-rem(74);
+      background-color: black;
+      padding: px-to-rem(28) px-to-rem(28);
+   }
+
+   .arrow__right {
+      right: 0;
+   }
+
+   .menu__nav {
+      justify-content: flex-start;
+      gap: 6rem;
+   }
+
+   .menu__icon-x {
+      height: px-to-rem(20);
+   }
+
+   .menu__list {
+      gap: 2rem;
+   }
+
+   .menu__link {
+      font-size: px-to-rem(15);
+   }
+
+
+   .section.active {
+      padding: px-to-rem(50) px-to-rem(30) 0;
+   }
+
+   .section__title {
+      font-size: 2.8rem;
+      line-height: 2.3rem;
+      margin-bottom: px-to-rem(20);
+   }
+
+   .section__description {
+      font-size: px-to-rem(17);
+      line-height: 1.3rem;
+      margin-bottom: px-to-rem(40);
+   }
+
+   .section__link {
+      font-size: 1.3rem;
+      margin: 0 px-to-rem(30) px-to-rem(80);
+      letter-spacing: px-to-rem(13);
+   }
+
+   .furniture__dark, .furniture__white {
+      width: px-to-rem(463);
+   }
+
+   .furniture__info {
+      padding: px-to-rem(40) px-to-rem(30);
+   }
+
+   .furniture__title {
+      font-size: px-to-rem(20);
+      letter-spacing: px-to-rem(5);
+   }
+
+   .furniture__description {
+      font-size: px-to-rem(16);
+      line-height: px-to-rem(25);
+      margin-bottom: px-to-rem(20);
+   }
 }

@@ -214,6 +214,7 @@ body {
   color: hsl(0, 0%, 63%);
   font-size: 0.8125rem;
   line-height: 1.2rem;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 23.4375rem) {
@@ -266,6 +267,78 @@ body {
   }
   .furniture__description {
     font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 30rem) {
+  .wrapper {
+    width: 28.9375rem;
+  }
+  .menu__bg.active {
+    width: 28.9375rem;
+  }
+  .menu__imgs {
+    padding: 2.5rem 1.875rem;
+  }
+  .menu__logo {
+    top: 10px;
+  }
+  .arrow__left,
+  .arrow__right {
+    position: absolute;
+    right: 65px;
+    bottom: 3px;
+    height: 4.625rem;
+    background-color: black;
+    padding: 1.75rem 1.75rem;
+  }
+  .arrow__right {
+    right: 0;
+  }
+  .menu__nav {
+    justify-content: flex-start;
+    gap: 6rem;
+  }
+  .menu__icon-x {
+    height: 1.25rem;
+  }
+  .menu__list {
+    gap: 2rem;
+  }
+  .menu__link {
+    font-size: 0.9375rem;
+  }
+  .section.active {
+    padding: 3.125rem 1.875rem 0;
+  }
+  .section__title {
+    font-size: 2.8rem;
+    line-height: 2.3rem;
+    margin-bottom: 1.25rem;
+  }
+  .section__description {
+    font-size: 1.0625rem;
+    line-height: 1.3rem;
+    margin-bottom: 2.5rem;
+  }
+  .section__link {
+    font-size: 1.3rem;
+    margin: 0 1.875rem 5rem;
+    letter-spacing: 0.8125rem;
+  }
+  .furniture__dark, .furniture__white {
+    width: 28.9375rem;
+  }
+  .furniture__info {
+    padding: 2.5rem 1.875rem;
+  }
+  .furniture__title {
+    font-size: 1.25rem;
+    letter-spacing: 0.3125rem;
+  }
+  .furniture__description {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    margin-bottom: 1.25rem;
   }
 }
 
