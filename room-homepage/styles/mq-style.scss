@@ -26,6 +26,10 @@
       height: px-to-rem(410);
    }
 
+   .menu__imgs {
+      width: 10%;
+   }
+
    .menu__hamburguer {
       display: none;
    }
@@ -47,6 +51,7 @@
    }
 
    .menu__nav {
+      width: 20%;      
       left: px-to-rem(108);
       background-color: rgba(255, 255, 255, 0);
       transition: transform 0ms;
@@ -57,7 +62,7 @@
    }
 
    
-   .menu__link {
+   .menu__link {      
       color: white;
       font-weight: 500;
 
@@ -102,6 +107,119 @@
 
    .furniture__title {
       font-size: 1rem;
+   }
+
+}
+
+@media screen and (min-width: px-to-rem(1200)) {
+   .wrapper {
+      width: px-to-rem(1200);
+   }
+
+   .menu__bg.active {
+      width: px-to-rem(770);
+      height: px-to-rem(600);
+   }
+
+   .menu__logo {
+      left: 93px;
+      top: 34px;
+      width: px-to-rem(70);
+   }
+
+   .arrow__left,
+   .arrow__right {
+      right: -82px;
+      height: px-to-rem(80);
+      padding: px-to-rem(30) px-to-rem(35);
+   }
+
+   .arrow__right {
+      right: -164px;
+   }
+   
+   .menu__nav {
+      top: 35px;
+      left: 158px;
+   }
+
+   .menu__list {
+      gap: 2rem;
+   }
+
+   .menu__link {
+      font-size: 1rem;
+   }
+
+   .section__title {
+      margin: px-to-rem(120) 0 0 px-to-rem(70);
+      font-size: 2.1rem;
+   }
+
+   .section__description {
+      margin-top: px-to-rem(15);
+   }
+
+   .section__link {
+      margin-top: px-to-rem(15);
+   }
+
+   .furniture__dark {
+      width: px-to-rem(400);
+      height: px-to-rem(310);
+   }
+   
+   .furniture__white {
+      width: px-to-rem(400);
+      height: px-to-rem(310);
+   }
+} 
+
+@media screen and (min-width: px-to-rem(1440)) {
+   .wrapper {
+      width: px-to-rem(1440);
+   }
+
+   .menu__bg.active {
+      width: px-to-rem(850);
+   }
+
+   .arrow__left,
+   .arrow__right {
+      right: -82px;
+      height: px-to-rem(80);
+      padding: px-to-rem(30) px-to-rem(35);
+   }
+
+   .arrow__right {
+      right: -164px;
+   }
+
+   .menu__nav {
+      left: px-to-rem(158);
+   }
+
+   .section__title {
+      margin: px-to-rem(140) 0 0 px-to-rem(90);
+      font-size: 2.9rem;
+   }
+   
+   .section__description {
+      margin: px-to-rem(20) px-to-rem(70) 0 px-to-rem(90);
+      font-size: px-to-rem(14);
+   }
+
+   .section__link {
+      margin: px-to-rem(30) 0 0 px-to-rem(90);
+      font-size: 1rem;
+   }
+
+   .furniture__dark {
+      width: px-to-rem(425);
+   }
+
+   .furniture__white {
+      width: px-to-rem(426);
    }
 
 }
