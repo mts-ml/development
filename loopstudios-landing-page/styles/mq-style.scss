@@ -4,11 +4,11 @@
 
 @media screen and (min-width: px-to-rem(375)) {
    header.menu {
-      width: px-to-rem(358);
+      width: 100%;
    }
 
    .menu__title-img {
-      width: px-to-rem(120)
+      width: 60%;
    }
 
    .menu__hamburguer-img {
@@ -16,31 +16,46 @@
       width: 22px;
    }
 
+   .menu__title-img {
+      width: px-to-rem(120);
+   }
+
    .menu__icon-x {
       width: px-to-rem(15);
    }
 
+   .menu__title {
+      font-size: clamp(2rem, 1.5em + 4vw, 9rem);
+   }
+
    .main {
-      width: px-to-rem(358);
+      width: 100%;
    }
 
    .main__img {
-      width: px-to-rem(358);
+      width: 100%;
+   }
+
+   .main__title {
+      font-size: clamp(px-to-rem(26), 1em + 4vw, 10rem);
+   }
+
+   .main__description {
+      font-size: clamp(px-to-rem(14), .7em + 1vw, 5rem);
    }
 
    article.products {
-      max-width: px-to-rem(338);
-      height: px-to-rem(124);
+      width: 90%;
    }
 
    .products__title {
-      bottom: 26px;
-      left: 30px;
-      font-size: px-to-rem(22);
+      bottom: 15px;
+      left: 43px;
+      font-size: px-to-rem(19);
    }
 
    .footer {
-      width: px-to-rem(358);
+      width: 100%;
    }
 
    .footer__logo-img {
@@ -48,13 +63,14 @@
    }
 
    .footer__list {
-      font-size: px-to-rem(19)
+      font-size: px-to-rem(19);
+      padding-left: 0;
    }
 }
 
-@media screen and (min-width: px-to-rem(600)) {
+@media screen and (min-width: px-to-rem(500)) {
    header.menu {
-      width: px-to-rem(480);
+      width: 100%;
    }
 
    .menu__title-img {
@@ -87,19 +103,20 @@
    }
 
    .menu__title {
-      font-size: px-to-rem(43);
+      font-size: clamp(px-to-rem(43), 1em + 5.5vw, 15rem);
+      width: 80%;
    }
 
    .main {
-      width: px-to-rem(480);
+      width: 100%;
    }
 
    .main__img {
-      width: px-to-rem(480);
+      width: 100%;
    }
 
    .main__title {
-      font-size: px-to-rem(40);
+      font-size: clamp(px-to-rem(40), 1em + 3vh, 15rem);
    }
 
    .main__link {
@@ -108,22 +125,23 @@
    }
 
    .main__description {
-      font-size: px-to-rem(20);
+      font-size: clamp(px-to-rem(18), .9em + .8vw, 10rem);
+      line-height: 2rem;
    }
 
    article.products {
-      max-width: px-to-rem(450);
-      height: px-to-rem(166);
+      width: 90%;
+      height: auto;
    }
 
    .products__title {
-      bottom: 37px;
-      left: 50px;
-      font-size: px-to-rem(28);
+      bottom: 30px;
+      left: 64px;
+      font-size: px-to-rem(25);
    }
 
    .footer {
-      width: px-to-rem(480);
+      width: 100%;
    }
 
    .footer__logo-img {
@@ -143,9 +161,9 @@
 
    header.menu {
       position: relative;
-      width: px-to-rem(976);
+      width: 100%;
       background: url('../images/desktop/image-hero.jpg') no-repeat;
-      background-size: contain;
+      background-size: cover;
       padding: px-to-rem(60) px-to-rem(150);
       gap: 0;
       height: px-to-rem(441);
@@ -195,12 +213,9 @@
       position: absolute;
       padding-left: px-to-rem(30);
       top: px-to-rem(161);
-      width: px-to-rem(380);
+      width: px-to-rem(430);
       line-height: px-to-rem(45);
-   }
-
-   .main {
-      width: px-to-rem(976);
+      font-size: clamp(2rem, 1em + 3vw, 10rem);
    }
 
    .main__section {
@@ -217,7 +232,7 @@
    }
 
    .main__img {
-      width: px-to-rem(550);
+      width: 80%;
       margin-left: px-to-rem(138);
    }
 
@@ -255,7 +270,7 @@
    }
 
    .mini-wrapper {
-      width: px-to-rem(725);
+      width: 80%;
       margin-left: px-to-rem(155);
       margin-bottom: px-to-rem(150);
       display: grid;
@@ -332,12 +347,11 @@
    }
 
    .footer {
-      width: px-to-rem(976);
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 px-to-rem(155);
-      gap: px-to-rem(210);
+      padding: px-to-rem(40) 0 px-to-rem(20) px-to-rem(150);
    }
 
    .footer__link {
@@ -348,11 +362,18 @@
 
    .footer__logo-img {
       width: px-to-rem(150);
+      margin-bottom: 0;
    }
 
    .footer__list {
       flex-flow: row nowrap;
       font-size: px-to-rem(15);
+      margin-top: 2rem;
+   }
+
+   .footer__icons {
+      margin-top: 0;
+      padding-right: px-to-rem(60);
    }
 
    .footer__icons-list {
@@ -367,8 +388,12 @@
 }
 
 @media screen and (min-width: px-to-rem(1200)) {
+   body {
+      background-color: white;
+   }
+
    header.menu {
-      width: px-to-rem(1180);
+      width: 100%;
       height: px-to-rem(533);
    }
 
@@ -396,7 +421,7 @@
       flex-flow: column nowrap;
       gap: 1.5rem;
       width: px-to-rem(560);
-      bottom: 4px;
+      bottom: 0px;
       height: px-to-rem(270);
    }
 
@@ -441,8 +466,8 @@
    }
 
    .footer {
-      width: px-to-rem(1180);
-      padding: 0 px-to-rem(120);
+      width: 100%;
+      padding: px-to-rem(30) px-to-rem(120);
    }
 
    .footer__logo-img {
@@ -451,5 +476,9 @@
 
    .footer__list {
       margin-left: px-to-rem(40);
+   }
+
+   .footer__icons {
+      padding: 0;
    }
 }
