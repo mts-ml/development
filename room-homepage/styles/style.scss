@@ -35,13 +35,6 @@ body {
    width: px-to-rem(300);
 }
 
-.hidden {
-   position: absolute;
-   top: -100px;
-   transform: translateY(-100%);
-   transition: transform 400ms ease-in-out;
-}
-
 .menu {
    position: relative;
 }
@@ -123,6 +116,11 @@ body {
    right: 0;
 }
 
+.hidden {
+   position: absolute;
+   transform: translateY(-100%);
+   transition: transform 400ms ease-in-out;
+}
 
 .menu__nav {
    position: absolute;
