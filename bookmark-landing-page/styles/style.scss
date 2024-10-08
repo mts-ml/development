@@ -5,20 +5,25 @@
 
 /* rubik-regular - latin */
 @font-face {
-   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-display: swap;
+   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
    font-family: 'Rubik';
    font-style: normal;
    font-weight: 400;
-   src: url('../assets/fonts/rubik-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
- }
- /* rubik-500 - latin */
- @font-face {
-   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   src: url('../assets/fonts/rubik-v28-latin-regular.woff2') format('woff2');
+   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* rubik-500 - latin */
+@font-face {
+   font-display: swap;
+   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
    font-family: 'Rubik';
    font-style: normal;
    font-weight: 500;
-   src: url('../assets/fonts/rubik-v28-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
- }
+   src: url('../assets/fonts/rubik-v28-latin-500.woff2') format('woff2');
+   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 
 *,
@@ -32,7 +37,10 @@
    padding: 0;
 }
 
-body, button, textarea, select {
+body,
+button,
+textarea,
+select {
    font-family: 'Rubik', Arial, Helvetica, sans-serif;
    font-size: px-to-rem(18);
 }
@@ -47,30 +55,36 @@ body {
    padding: px-to-rem(40) px-to-rem(30);
 }
 
-.header {
-   position: relative;
-}
+.header {}
 
 .header__logos {
+   position: relative;
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
 
+.header__wrapper {
+   display: flex;
+   flex-flow: column nowrap;
+}
+
 .header__menu-hamburguer {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
    position: absolute;
-   top: 0px;
-   translate: -10% -13%;
-   width: 118%;
-   height: auto;
-   background-color: hsla(229, 31%, 21%); 
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(37, 43, 70, .97);
 }
 
 .header__hamburguer-logos {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   width: 100%;
    padding: px-to-rem(45) px-to-rem(50) px-to-rem(30);
 }
 
@@ -80,7 +94,7 @@ body {
 
 .header__icon-x {
    transition: transform 400ms ease-in-out;
-   
+
    &:hover {
       transform: scale(1.2);
       transition: transform 400ms ease-in-out;
@@ -96,16 +110,17 @@ hr {
 }
 
 
-.header__table {   
+.header__table {
    margin-inline: auto;
    width: 85%;
    border-collapse: collapse;
+   margin-bottom: px-to-rem(30);
 
-   tr {      
-      border-bottom: 1px solid rgba(255, 255, 255, .2);  
+   tr {
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
 
       th {
-         padding-block: 1rem;
+         padding-block: 1.2rem;
       }
    }
 }
@@ -116,4 +131,68 @@ hr {
    font-weight: 400;
    text-transform: uppercase;
    letter-spacing: 3px;
+}
+
+.btn__link--bg {
+   transition: background-color 150ms ease-in-out;
+
+   &:hover {
+      transition: background-color 400ms ease-in-out;
+      background-color: black;
+      padding: 5px;
+   }
+}
+
+.btn__link--login {
+   display: inline-block;
+   text-align: center;
+   width: 85%;
+   border: 2px solid white;
+   border-radius: 10px;
+   padding-block: 1rem;
+   align-self: center;
+   transition: background-color 200ms ease-in-out;
+
+   &:hover {
+      background-color: rgba(37, 43, 70);
+      transition: background-color 200ms ease-in-out;
+   }
+}
+
+.header__icons {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   list-style: none;
+   margin-inline: auto;
+   margin-block: 0 px-to-rem(50);
+}
+
+.header__icons-link {
+   position: relative;
+
+   &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 3px;
+      background-color: white;
+      bottom: -13px;
+      left: 0;
+      transition: width 400ms ease-in-out;
+   }
+
+   &:hover::after {
+      width: 100%;
+      transition: width 400ms ease-in-out;
+   }
+}
+
+.header__icons-link>img {
+   transition: transform 400ms ease-in-out;
+
+   &:hover {
+      transform: scale(1.2);
+      transition: transform 400ms ease-in-out;
+   }
 }
