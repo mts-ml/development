@@ -1,0 +1,119 @@
+@function px-to-rem($px-value) {
+   @return $px-value / 16 * 1rem
+}
+
+
+/* rubik-regular - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../assets/fonts/rubik-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+ }
+ /* rubik-500 - latin */
+ @font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 500;
+   src: url('../assets/fonts/rubik-v28-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+ }
+
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body, button, textarea, select {
+   font-family: 'Rubik', Arial, Helvetica, sans-serif;
+   font-size: px-to-rem(18);
+}
+
+$Soft-Blue: hsl(231, 69%, 60%);
+$Soft-Red: hsl(0, 94%, 66%);
+$Grayish-Blue: hsl(229, 8%, 60%);
+$Very-Dark-Blue: hsl(229, 31%, 21%);
+
+
+body {
+   padding: px-to-rem(40) px-to-rem(30);
+}
+
+.header {
+   position: relative;
+}
+
+.header__logos {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__menu-hamburguer {
+   position: absolute;
+   top: 0px;
+   translate: -10% -13%;
+   width: 118%;
+   height: auto;
+   background-color: hsla(229, 31%, 21%); 
+}
+
+.header__hamburguer-logos {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding: px-to-rem(45) px-to-rem(50) px-to-rem(30);
+}
+
+.header__logo {
+   filter: invert(100%) brightness(1000%);
+}
+
+.header__icon-x {
+   transition: transform 400ms ease-in-out;
+   
+   &:hover {
+      transform: scale(1.2);
+      transition: transform 400ms ease-in-out;
+      cursor: pointer;
+   }
+}
+
+hr {
+   margin-inline: auto;
+   border: none;
+   width: 85%;
+   border-top: 0.5px solid rgba(255, 255, 255, .2);
+}
+
+
+.header__table {   
+   margin-inline: auto;
+   width: 85%;
+   border-collapse: collapse;
+
+   tr {      
+      border-bottom: 1px solid rgba(255, 255, 255, .2);  
+
+      th {
+         padding-block: 1rem;
+      }
+   }
+}
+
+.btn__link {
+   text-decoration: none;
+   color: white;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
