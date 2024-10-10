@@ -66,6 +66,10 @@
     color: hsl(0, 94%, 66%);
     transition: background-color 400ms ease-in-out;
   }
+  .hero__img {
+    width: 113%;
+    margin-inline: -35px;
+  }
 }
 @media screen and (min-width: 56.25rem) {
   body {
