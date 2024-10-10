@@ -1,0 +1,91 @@
+@media screen and (min-width: 48rem) {
+  .btn-hamburguer {
+    display: none;
+  }
+  .header__hamburguer-logos > img,
+  .header__icon-x,
+  .header__icons,
+  hr {
+    display: none;
+  }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__menu-desktop {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .header__wrapper {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  .header__hamburguer-logos {
+    padding: 0;
+  }
+  .header__ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-bottom: 0;
+    width: 100%;
+    margin-inline-end: 1rem;
+  }
+  .header__ul li {
+    color: black;
+    border-bottom: none;
+    padding: 0;
+  }
+  .header__link {
+    color: black;
+    transition: color 150ms ease-in-out;
+  }
+  .header__link:hover {
+    background-color: transparent;
+    color: hsl(0, 94%, 66%);
+    transition: color 400ms ease-in-out;
+  }
+  .header__link--bg:hover {
+    padding: 0;
+  }
+  .header__link--login {
+    background-color: hsl(0, 94%, 66%);
+    width: auto;
+    border: none;
+    align-self: flex-end;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: background-color 400ms ease-in-out;
+  }
+  .header__link--login:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    transition: background-color 400ms ease-in-out;
+  }
+}
+@media screen and (min-width: 56.25rem) {
+  body {
+    width: 55rem;
+    margin-inline: auto;
+  }
+  .header__ul {
+    gap: 2rem;
+    margin-inline-end: 2rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  body {
+    width: 65rem;
+    margin-inline: auto;
+  }
+  .header__ul {
+    gap: 3rem;
+    margin-inline-end: 3rem;
+  }
+}
+
+/*# sourceMappingURL=mq-style.css.map */
