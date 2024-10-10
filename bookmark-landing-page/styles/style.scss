@@ -52,11 +52,14 @@ $Very-Dark-Blue: hsl(229, 31%, 21%);
 
 
 body {
-   padding: px-to-rem(40) px-to-rem(30);
+   display: grid;
+   place-items: center;
+   width: 100vw;
 }
 
 .header {
-   margin-block-end: px-to-rem(100);
+   padding: px-to-rem(40) px-to-rem(30);
+   margin-block-end: px-to-rem(30);
 }
 
 .header__logos {
@@ -147,8 +150,8 @@ hr {
    li {
       border-bottom: .1px solid rgba(255, 255, 255, .2);
       padding: px-to-rem(25);
-      text-align: center;      
-   }   
+      text-align: center;
+   }
 }
 
 .header__link {
@@ -162,7 +165,7 @@ hr {
 .header__link--bg {
    color: white;
    transition: background-color 150ms ease-in-out;
-   
+
    &:hover {
       transition: background-color 400ms ease-in-out;
       background-color: black;
@@ -226,6 +229,13 @@ hr {
    }
 }
 
+.hero__container {
+   position: relative;
+   overflow: hidden;
+   margin-block-end: px-to-rem(50);
+   height: auto;
+}
+
 .hero__img {
    width: 100%;
    height: auto;
@@ -233,12 +243,81 @@ hr {
 
 .hero__bg {
    position: absolute;
-   top: 26.5vh;
-   right: 0;
-   left: 78px;
-   background-color: $Soft-Blue;
+   top: 55px;
+   right: -44px;
    width: 100%;
-   height: 33vh;
-   border-radius: 0 0 0 120px;
+   background-color: $Soft-Blue;
+   height: 100%;
+   border-radius: 0 0 0 60%;
    z-index: -1;
+}
+
+.hero__bg {
+   @media screen and (min-width: px-to-rem(450)) {
+      top: 76px;
+      right: -79px
+   }
+}
+
+.hero__info {
+   margin-inline: px-to-rem(30);
+   margin-block-end: px-to-rem(150);
+}
+
+.hero__links {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.btn__link {
+   text-decoration: none;
+   color: white;
+   background-color: $Soft-Blue;
+   padding: 17px 12px;
+   border-radius: 5px;
+   font-size: px-to-rem(14);
+   font-weight: 500;
+   transition: all 300ms ease-in-out;
+
+   &:hover {
+      box-shadow: 0 4px 10px hsla(231, 69%, 60%, .4);
+      background-color: white;
+      color: hsl(229, 18%, 40%);
+      transition: all 300ms ease-in-out;
+   }
+}
+
+.features {
+   padding-inline: px-to-rem(30);
+}
+
+.features__list {
+   list-style: none;
+}
+
+.hero__title,
+.features__title,
+.section__title,
+.extensions__title,
+.card__title,
+.questions__title {
+   text-align: center;
+   font-weight: 500;
+   color: $Very-Dark-Blue;
+   margin-block-end: px-to-rem(20);
+   font-size: px-to-rem(28);
+}
+
+.hero__description,
+.features__description,
+.section__description,
+.extensions__description,
+.card__description,
+.questions__description {
+   text-align: center;
+   color: $Grayish-Blue;
+   font-size: clamp(1rem, 0.922rem + 0.341vh, 1.214rem);
+   line-height: 1.8rem;
+   margin-block-end: px-to-rem(30);
 }

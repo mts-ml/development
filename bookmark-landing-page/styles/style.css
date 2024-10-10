@@ -38,11 +38,14 @@ select {
 }
 
 body {
-  padding: 2.5rem 1.875rem;
+  display: grid;
+  place-items: center;
+  width: 100vw;
 }
 
 .header {
-  margin-block-end: 6.25rem;
+  padding: 2.5rem 1.875rem;
+  margin-block-end: 1.875rem;
 }
 
 .header__logos {
@@ -202,6 +205,13 @@ hr {
   transition: transform 400ms ease-in-out;
 }
 
+.hero__container {
+  position: relative;
+  overflow: hidden;
+  margin-block-end: 3.125rem;
+  height: auto;
+}
+
 .hero__img {
   width: 100%;
   height: auto;
@@ -209,14 +219,82 @@ hr {
 
 .hero__bg {
   position: absolute;
-  top: 26.5vh;
-  right: 0;
-  left: 78px;
-  background-color: hsl(231, 69%, 60%);
+  top: 55px;
+  right: -44px;
   width: 100%;
-  height: 33vh;
-  border-radius: 0 0 0 120px;
+  background-color: hsl(231, 69%, 60%);
+  height: 100%;
+  border-radius: 0 0 0 60%;
   z-index: -1;
+}
+
+@media screen and (min-width: 28.125rem) {
+  .hero__bg {
+    top: 76px;
+    right: -79px;
+  }
+}
+
+.hero__info {
+  margin-inline: 1.875rem;
+  margin-block-end: 9.375rem;
+}
+
+.hero__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn__link {
+  text-decoration: none;
+  color: white;
+  background-color: hsl(231, 69%, 60%);
+  padding: 17px 12px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 300ms ease-in-out;
+}
+.btn__link:hover {
+  box-shadow: 0 4px 10px hsla(231, 69%, 60%, 0.4);
+  background-color: white;
+  color: hsl(229, 18%, 40%);
+  transition: all 300ms ease-in-out;
+}
+
+.features {
+  padding-inline: 1.875rem;
+}
+
+.features__list {
+  list-style: none;
+}
+
+.hero__title,
+.features__title,
+.section__title,
+.extensions__title,
+.card__title,
+.questions__title {
+  text-align: center;
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
+  margin-block-end: 1.25rem;
+  font-size: 1.75rem;
+}
+
+.hero__description,
+.features__description,
+.section__description,
+.extensions__description,
+.card__description,
+.questions__description {
+  text-align: center;
+  color: hsl(229, 8%, 60%);
+  font-size: clamp(1rem, 0.922rem + 0.341vh, 1.214rem);
+  line-height: 1.8rem;
+  margin-block-end: 1.875rem;
 }
 
 /*# sourceMappingURL=style.css.map */
