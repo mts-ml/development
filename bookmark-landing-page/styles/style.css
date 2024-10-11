@@ -37,10 +37,30 @@ select {
   font-size: 1.125rem;
 }
 
-body {
-  display: grid;
-  place-items: center;
-  width: 100vw;
+.hero__title,
+.features__title,
+.section__title,
+.extensions__title,
+.card__title,
+.questions__title {
+  text-align: center;
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
+  margin-block-end: 1.25rem;
+  font-size: 1.75rem;
+}
+
+.hero__description,
+.features__description,
+.section__description,
+.extensions__description,
+.card__description,
+.questions__description {
+  text-align: center;
+  color: hsl(229, 8%, 60%);
+  font-size: clamp(1rem, 0.822rem + 0.341vh, 1.214rem);
+  line-height: 1.8rem;
+  margin-block-end: 1.875rem;
 }
 
 .header {
@@ -116,7 +136,7 @@ body {
   cursor: pointer;
 }
 
-hr {
+.header__hr {
   margin-inline: auto;
   border: none;
   width: 85%;
@@ -217,26 +237,8 @@ hr {
   height: auto;
 }
 
-.hero__bg {
-  position: absolute;
-  top: 55px;
-  right: -44px;
-  width: 100%;
-  background-color: hsl(231, 69%, 60%);
-  height: 100%;
-  border-radius: 0 0 0 60%;
-  z-index: -1;
-}
-
-@media screen and (min-width: 28.125rem) {
-  .hero__bg {
-    top: 76px;
-    right: -79px;
-  }
-}
-
 .hero__info {
-  margin-inline: 1.875rem;
+  padding-inline: 1.875rem;
   margin-block-end: 9.375rem;
 }
 
@@ -264,37 +266,111 @@ hr {
 }
 
 .features {
+  position: relative;
   padding-inline: 1.875rem;
+}
+
+.features__hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .features__list {
   list-style: none;
+  margin-block-end: 6.25rem;
+}
+.features__list li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.9375rem;
+  margin-inline: auto;
+  text-align: center;
 }
 
-.hero__title,
-.features__title,
-.section__title,
-.extensions__title,
-.card__title,
-.questions__title {
-  text-align: center;
-  font-weight: 500;
+.features__link {
+  position: relative;
+  text-decoration: none;
+  color: hsl(236, 6%, 46%);
+}
+.features__link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  background-color: hsl(0, 94%, 66%);
+  left: 50%;
+  bottom: -15px;
+  height: 4px;
+  transition: width 400ms ease-in-out, color 400ms ease-in-out;
+  transform: translate(-50%);
+}
+.features__link:hover::after {
+  width: 90%;
+  transition: width 400ms ease-in-out;
+}
+.features__link:hover {
   color: hsl(229, 31%, 21%);
-  margin-block-end: 1.25rem;
-  font-size: 1.75rem;
+  transition: color 400ms ease-in-out;
 }
 
-.hero__description,
-.features__description,
-.section__description,
-.extensions__description,
-.card__description,
-.questions__description {
-  text-align: center;
-  color: hsl(229, 8%, 60%);
-  font-size: clamp(1rem, 0.922rem + 0.341vh, 1.214rem);
-  line-height: 1.8rem;
+.features__link.selected {
+  color: hsl(229, 31%, 21%);
+}
+.features__link.selected::after {
+  width: 100%;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+  margin-block-end: 9.375rem;
+}
+
+.section__img {
+  width: 100%;
+  margin-inline: auto;
+  margin-block-end: 3.125rem;
+}
+
+.btn__link--section {
+  display: none;
+}
+
+.extensions {
+  padding-inline: 1.875rem;
+}
+
+.card {
+  margin-block-start: 3.75rem;
+  border-radius: 10px;
+  padding: 3.125rem 0 1.25rem;
+  box-shadow: 0 10px 10px hsla(231, 69%, 60%, 0.1);
+}
+
+.card > img {
+  display: block;
+  margin-inline: auto;
   margin-block-end: 1.875rem;
+}
+
+.card__title {
+  margin-block-end: 0.625rem;
+  font-size: 1.4375rem;
+}
+
+.btn__link--card {
+  display: block;
+  margin-inline: auto;
+  text-align: center;
+  width: 90%;
+}
+.btn__link--card:hover {
+  border: 2px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+}
+
+.card__dots {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
