@@ -15,6 +15,10 @@
       display: none;
    }
 
+   .header {
+      padding-inline: 3rem;
+   }
+
    .header__nav {
       display: flex;
       justify-content: space-between;
@@ -86,10 +90,17 @@
          transition: background-color 400ms ease-in-out;
       }
    }
-  
+
    .hero__img {
-      width: 113%;
-      margin-inline: -35px;
+      width: 100%;
+   }
+
+   .hero__info {
+      padding-inline: 3rem;
+   }
+
+   .features {
+      padding-inline: 3rem;
    }
 }
 
@@ -99,20 +110,109 @@
       margin-inline: auto;
    }
 
+   .header {
+      // padding-inline: 0;
+   }
+
    .header__ul {
       gap: 2rem;
       margin-inline-end: 2rem;
    }
+
+   .hero {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+   }
+
+   .hero__info {
+      order: 1;
+      padding-top: 50px;
+   }
+
+   .hero__container {
+      order: 2;
+   }
+
+   .features__description {
+      width: 45ch;
+      margin-inline: auto;
+   }
+
+   .features__list {
+      display: flex;
+      border-bottom: 1px solid rgba(0, 0, 0, .2);
+      width: 80%;
+      margin-inline: auto;
+
+      li {
+         border: none;
+         flex: 1;
+      }
+   }
+
+   .features__link {
+      font-size: 16px;
+
+      &::after {
+         bottom: -17px;
+      }
+
+      &:hover::after {
+         width: 100%;
+      }
+   }
+
+   .features__link.selected::after {
+      width: 210px;
+      bottom: -17px;
+   }
+
+   .section.active {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+   }
+
+   .section__info {
+      align-self: center;
+   }
+
+   .section__title {
+      text-align: left;
+   }
+
+   .section__description {
+      text-align: left;
+      margin-block-end: 0;
+   }
+
+   .btn__link--section {
+      display: block;
+      position: absolute;
+      right: 320px;
+      bottom: 0;
+   }
+
 }
 
 @media screen and (min-width: 75rem) {
    body {
       width: 65rem;
       margin-inline: auto;
-   }   
+   }
+
+   .header {
+      padding-inline: 2rem;
+   }
 
    .header__ul {
       gap: 3rem;
       margin-inline-end: 3rem;
+   }
+
+   .features__link.selected::after {
+      width: 250px;
    }
 }
