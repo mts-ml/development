@@ -199,6 +199,12 @@
   .features__link.selected::after {
     width: 250px;
   }
+  .questions__title {
+    font-size: 2.0625rem;
+  }
+  .questions__description {
+    font-size: 1.125rem;
+  }
 }
 
 /*# sourceMappingURL=mq-style.css.map */

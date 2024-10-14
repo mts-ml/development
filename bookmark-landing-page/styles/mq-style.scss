@@ -119,7 +119,7 @@
       margin-block: px-to-rem(25);
    }
 
-   
+
 
 }
 
@@ -258,5 +258,13 @@
 
    .features__link.selected::after {
       width: 250px;
+   }
+
+   .questions__title {
+      font-size: px-to-rem(33);
+   }
+
+   .questions__description {
+      font-size: px-to-rem(18);
    }
 }
