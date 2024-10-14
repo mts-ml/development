@@ -134,7 +134,7 @@
 
 
         <div class="section__info">
-          <h3 class="section__title selected">Bookmark in one click</h3>
+          <h3 class="section__title">Bookmark in one click</h3>
 
           <p class="section__description">
             Organize your bookmarks however you like. Our simple drag-and-drop interface
@@ -143,8 +143,8 @@
         </div>
       </section>
 
-      <div class="section__bg"></div>
-      
+      <!-- <div class="section__bg"></div> -->
+
 
       <section class="section">
 
@@ -227,8 +227,6 @@
       </div>
     </section>
 
-
-    <!--     
     <section class="questions">
       <h2 class="questions__title">Frequently Asked Questions</h2>
 
@@ -237,25 +235,35 @@
         answered please feel free to email us.
       </p>
 
+
+      <!-- 1º -->
       <div class="question">
-        <div class="question__info">
+        <hr class="question__first-hr">
+
+        <div class="question__info" role="button" aria-expanded="false">
           <h4 class="question__title">What is Bookmark?</h4>
 
-          <img src="./assets/images/icon-arrow.svg" alt="Picture of the head of an arrow point down">
+          <img class="question__img" src="./assets/images/icon-arrow.svg"
+            alt="Picture of the head of an arrow point down">
         </div>
 
         <p class="question__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
           justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
         </p>
+
+        <hr class="question__hr">
       </div>
 
+      <!-- 2º -->
       <div class="question">
-        <div class="question__info">
+
+        <div class="question__info" role="button" aria-expanded="false">
           <h4 class="question__title">How can I request a new browser?</h4>
 
-          <img src="./assets/images/icon-arrow.svg" alt="Picture of the head of an arrow point down">
-        </div>
+          <img class="question__img" src="./assets/images/icon-arrow.svg"
+            alt="Picture of the head of an arrow point down">
+          </div>
 
         <p class="question__description">
           Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
@@ -263,13 +271,18 @@
           ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
           Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
         </p>
+
+        <hr class="question__hr">
       </div>
 
-      <div class="question">
-        <div class="question__info">
-          <h4 class="question__tittle">Is there a mobile app?</h4>
+      <!-- 3º -->
+    <div class="question">
 
-          <img src="./assets/images/icon-arrow.svg" alt="Picture of the head of an arrow point down">
+        <div class="question__info" role="button" aria-expanded="false">
+          <h4 class="question__title">Is there a mobile app?</h4>
+
+          <img class="question__img" src="./assets/images/icon-arrow.svg"
+            alt="Picture of the head of an arrow point down">
         </div>
 
         <p class="question__description">
@@ -277,26 +290,33 @@
           urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
           sollicitudin ex et ultricies bibendum.
         </p>
+
+        <hr class="question__hr">
       </div>
 
+      <!-- 4º -->
       <div class="question">
-        <hr>
 
-        <div class="question__info">
-          <h4 class="question__tittle">What about other Chromium browsers?</h4>
-          <img src="./assets/images/icon-arrow.svg" alt="Picture of the head of an arrow point down">
+        <div class="question__info" role="button" aria-expanded="false">
+          <h4 class="question__title">What about other Chromium browsers?</h4>
+
+          <img class="question__img" src="./assets/images/icon-arrow.svg"
+            alt="Picture of the head of an arrow point down">
         </div>
+
         <p class="question__description">
           Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
           vitae neque eget nisl gravida pellentesque non ut velit.
         </p>
+
+        <hr class="question__hr">
       </div>
 
-      <a class="btn__link" href="/" target="_self" rel="noopener noreferrer">More Info</a>
+      <a class="btn__link btn__link--question" href="/" target="_self" rel="noopener noreferrer">More Info</a>
     </section>
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
 
     <p>35,000+ already joined</p>
 
@@ -327,8 +347,8 @@
 
         <img src="./assets/images/icon-twitter.svg" alt="Icon of Twitter">
       </div>
-    </div> -->
-    </footer>
+    </div>
+      </footer> -->
 </body>
 
 </html>
