@@ -338,6 +338,7 @@ select {
 
 .extensions {
   padding-inline: 1.875rem;
+  margin-block-end: 10.625rem;
 }
 
 .card {
@@ -371,6 +372,81 @@ select {
 
 .card__dots {
   width: 100%;
+}
+
+.questions {
+  padding-inline: 1.875rem;
+}
+
+.question__first-hr {
+  display: none;
+}
+
+.questions__description {
+  margin-block-end: 5rem;
+}
+
+.question__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question__info:hover .question__title {
+  color: hsl(0, 94%, 66%);
+  transition: color 200ms ease-in-out;
+}
+
+.question__title {
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
+  transition: color 200ms ease-in-out;
+}
+
+.question__img {
+  transition: transform 200ms ease-in-out;
+}
+.question__img:hover {
+  transform: scale(1.2);
+  transition: transform 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.question__img.active {
+  transform: rotate(180deg);
+  transition: transform 600ms ease-in-out;
+  filter: sepia(1) saturate(10000%) brightness(0.8);
+}
+
+.question__description {
+  height: 0;
+  opacity: 0;
+  transition: height 600ms ease-in-out;
+}
+
+.question__description.active {
+  display: block;
+  height: auto;
+  opacity: 1;
+  transition: all 600ms ease-in-out;
+  margin-block: 1.875rem;
+  color: hsl(229, 8%, 40%);
+  line-height: 2rem;
+  font-size: 0.9375rem;
+}
+
+.question__hr {
+  margin-inline: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-block: 1.25rem 2.1875rem;
+}
+
+.btn__link--question {
+  display: block;
+  text-align: center;
+  margin-inline: auto;
+  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */
