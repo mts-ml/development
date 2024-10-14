@@ -492,6 +492,7 @@ $Very-Dark-Blue: hsl(229, 31%, 21%);
 }
 
 .question__description {
+   pointer-events: none;
    height: 0;
    opacity: 0;
    transition: height 600ms ease-in-out,
@@ -517,7 +518,44 @@ $Very-Dark-Blue: hsl(229, 31%, 21%);
 
 .btn__link--question {
    display: block;
+   margin-block: px-to-rem(50) px-to-rem(120);
    text-align: center;
    margin-inline: auto;
-   width: 30%;
+   width: 120px;
 }
+
+.contact {
+   padding: px-to-rem(60) px-to-rem(30);
+   background-color: $Soft-Blue;
+   color: white;
+}
+
+.contact__description {
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   font-size: px-to-rem(14);
+   margin-block-end: px-to-rem(10);
+   text-align: center;
+}
+
+.contact__title {
+   font-weight: 500;
+   font-size: px-to-rem(25);
+   text-align: center;
+   line-height: 2rem;
+   margin-block-end: px-to-rem(20);
+}
+
+.contact__email {
+   height: px-to-rem(50);
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   padding-inline-start: px-to-rem(20);
+   font-size: px-to-rem(15);
+}
+
+.footer {
+   padding-inline: px-to-rem(30);
+}
+

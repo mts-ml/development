@@ -420,6 +420,7 @@ select {
 }
 
 .question__description {
+  pointer-events: none;
   height: 0;
   opacity: 0;
   transition: height 600ms ease-in-out;
@@ -444,9 +445,45 @@ select {
 
 .btn__link--question {
   display: block;
+  margin-block: 3.125rem 7.5rem;
   text-align: center;
   margin-inline: auto;
-  width: 30%;
+  width: 120px;
+}
+
+.contact {
+  padding: 3.75rem 1.875rem;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+}
+
+.contact__description {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.875rem;
+  margin-block-end: 0.625rem;
+  text-align: center;
+}
+
+.contact__title {
+  font-weight: 500;
+  font-size: 1.5625rem;
+  text-align: center;
+  line-height: 2rem;
+  margin-block-end: 1.25rem;
+}
+
+.contact__email {
+  height: 3.125rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding-inline-start: 1.25rem;
+  font-size: 0.9375rem;
+}
+
+.footer {
+  padding-inline: 1.875rem;
 }
 
 /*# sourceMappingURL=style.css.map */
