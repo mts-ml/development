@@ -16,6 +16,74 @@ const descriptions = document.querySelectorAll('.question__description')
 
 const images = document.querySelectorAll('.question__img')
 
+const emailInput = document.querySelector('.contact__email')
+
+const emailForm = document.querySelector('#emailForm')
+
+const emailRegex = /^[a-z][a-z0-9._*-]+[@][a-z0-9]+[.][a-z]/
+
+const errorMessage = document.querySelector('.error')
+
+const errorImg = document.querySelector('.contact__error-img')
+
+
+
+function validateEmail() {
+   let isEmailValid = false
+
+   if (emailInput.value.length >= 10 && emailRegex.test(emailInput.value)) {
+      isEmailValid = true
+   }
+
+   if (!isEmailValid) {
+      errorMessage.classList.remove('valid')
+      emailInput.style.backgroundColor = '#fdd'
+      emailInput.style.border = '2px solid red'
+      emailInput.style.outline = 'none'
+      errorImg.classList.add('active')
+      showError()
+   } else {
+      errorMessage.classList.add('valid')
+      errorImg.classList.remove('active')
+      emailInput.style.backgroundColor = 'hsl(105, 80%, 90%)'
+      emailInput.style.border = '2px solid green'
+      errorMessage.innerHTML = 'Email is valid'
+   }
+
+   return isEmailValid
+}
+
+emailInput.addEventListener('input', validateEmail)
+
+
+function showError() {
+   if (emailInput.value.trim().length <= 0) {
+      errorMessage.textContent = "You need to enter an email address."
+   } else if (!emailRegex.test(emailInput.value)) {
+      errorMessage.textContent = "Make sure you enter a valid email, with '@' and domain"
+   } else if (emailInput.value.length < 10) {
+      errorMessage.textContent = `Email should be at least ${emailInput.minLength} characters, you entered ${emailInput.value.length}.`
+   }
+}
+
+
+emailForm.addEventListener('submit', (e) => {   
+   const isValidEmail = validateEmail()
+   
+   if (!isValidEmail) {
+      e.preventDefault()
+      errorMessage.style.opacity = '1'
+      emailInput.focus()
+      showError()
+   }
+})
+
+
+emailInput.addEventListener('focus', () => {
+   showError();
+   errorMessage.style.opacity = '1'
+})
+
 
 
 questions.forEach((question, index) => {
@@ -31,15 +99,15 @@ questions.forEach((question, index) => {
          img.classList.remove('active')
       }
 
-      for (const quest of questions ) {
+      for (const quest of questions) {
          quest.setAttribute('aria-expanded', 'false')
       }
 
       if (!isActive) {
          descriptions[index].classList.add('active')
          images[index].classList.add('active')
-         question.setAttribute('aria-expanded', 'true')      
-   }
+         question.setAttribute('aria-expanded', 'true')
+      }
    })
 })
 
