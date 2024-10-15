@@ -460,26 +460,82 @@ select {
 .contact__description {
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   margin-block-end: 0.625rem;
   text-align: center;
 }
 
 .contact__title {
   font-weight: 500;
-  font-size: 1.5625rem;
+  font-size: 1.4375rem;
   text-align: center;
   line-height: 2rem;
   margin-block-end: 1.25rem;
 }
 
+#emailForm {
+  position: relative;
+}
+
 .contact__email {
-  height: 3.125rem;
+  height: 2.8125rem;
   width: 100%;
   border-radius: 5px;
   border: none;
   padding-inline-start: 1.25rem;
   font-size: 0.9375rem;
+}
+
+.contact__button {
+  margin-block-start: 1.5625rem;
+  width: 100%;
+  height: 2.8125rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.875rem;
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  transition: all 300ms ease-in-out;
+}
+.contact__button:hover {
+  color: hsl(0, 94%, 66%);
+  background-color: white;
+  border: 2px solid hsl(0, 94%, 66%);
+  transition: background-color 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.error {
+  position: absolute;
+  font-style: italic;
+  bottom: 54px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  background-color: hsl(0, 94%, 66%);
+  color: white;
+  border-radius: 0 0 5px 5px;
+  font-size: 0.625rem;
+  padding: 3px 3px 3px 10px;
+}
+
+.error.alert {
+  background-color: darkorange;
+}
+
+.contact__error-img {
+  display: none;
+}
+
+.contact__error-img.active {
+  position: absolute;
+  right: 14px;
+  top: 13px;
+  display: block;
+}
+
+.error.valid {
+  background-color: rgb(66, 119, 66);
 }
 
 .footer {
