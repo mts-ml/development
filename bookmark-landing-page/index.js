@@ -44,9 +44,10 @@ function validateEmail() {
       showError()
    } else {
       errorMessage.classList.add('valid')
-      errorImg.classList.remove('active')
       emailInput.style.backgroundColor = 'hsl(105, 80%, 90%)'
       emailInput.style.border = '2px solid green'
+      emailInput.style.outline = 'none'
+      errorImg.classList.remove('active')
       errorMessage.innerHTML = 'Email is valid'
    }
 
@@ -60,7 +61,7 @@ function showError() {
    if (emailInput.value.trim().length <= 0) {
       errorMessage.textContent = "You need to enter an email address."
    } else if (!emailRegex.test(emailInput.value)) {
-      errorMessage.textContent = "Make sure you enter a valid email, with '@' and domain"
+      errorMessage.textContent = "Make sure you email has '@' and domain"
    } else if (emailInput.value.length < 10) {
       errorMessage.textContent = `Email should be at least ${emailInput.minLength} characters, you entered ${emailInput.value.length}.`
    }
