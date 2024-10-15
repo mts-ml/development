@@ -102,9 +102,14 @@
       padding-inline: 3rem;
    }
 
-   .question {
-      margin-block: px-to-rem(30);
+   .questions__description {
+      padding-inline: px-to-rem(170);
+      margin-block-end: px-to-rem(50);
    }
+
+   .question {
+      padding-inline: px-to-rem(150);
+   }   
 
    .question__first-hr {
       margin-inline: auto;
@@ -119,16 +124,23 @@
       margin-block: px-to-rem(25);
    }
 
+   .contact {
+      padding-inline: px-to-rem(170);
 
+   }
 
 }
 
 @media screen and (min-width: 56.25rem) {
    body {
+      margin-inline: auto;
+   }
+   
+   .header, main {
       width: 55rem;
       margin-inline: auto;
    }
-
+   
    .header__ul {
       gap: 2rem;
       margin-inline-end: 2rem;
@@ -228,21 +240,51 @@
    .card:last-child {
       transform: translateY(20%);
    }
-
-   .questions__description {
-      padding-inline: px-to-rem(170);
-      margin-block-end: px-to-rem(50);
-
+   
+   .contact__description {
+      margin-block-end: px-to-rem(30);
    }
 
-   .question {
-      padding-inline: px-to-rem(150);
+   .contact {
+      padding-block-end: px-to-rem(70);
+   }
+
+   .contact__title {
+      font-size: px-to-rem(32);
+      margin-block-end: px-to-rem(40);
+   }
+
+   .contact__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .contact__email {
+      width: 300px;
+   }
+   
+   .contact__error-img.active {
+      right: 150px;
+   }
+   
+   .contact__button {
+      margin-inline-start: px-to-rem(10);
+      margin-block-start: 0;
+      width: 121px;
+   }
+   
+   .error {
+      width: 300px;
+      bottom: -15px;
    }
 
 }
 
+
+
 @media screen and (min-width: 75rem) {
-   body {
+   .header, .main {
       width: 65rem;
       margin-inline: auto;
    }
@@ -260,11 +302,55 @@
       width: 250px;
    }
 
+   .extensions {
+      padding-inline: px-to-rem(90);
+   }
+
+   .extensions__description {
+      width: 50ch;
+      margin-inline: auto;
+   }
+
    .questions__title {
+      padding-block-start: px-to-rem(80);
       font-size: px-to-rem(33);
    }
 
    .questions__description {
       font-size: px-to-rem(18);
+      margin-inline: auto;
+      width: 75ch;
+   }
+
+   .question {
+      padding-inline: px-to-rem(180);
+   }
+   
+   .footer {
+      height: px-to-rem(100);
+   }
+   
+   .footer__wrapper {
+      width: 65rem;
+      margin-inline: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+   }
+
+   .footer__links {
+      display: flex;
+      align-items: center;
+      gap: 6rem;
+   }
+
+   .footer__list {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 3rem;
+      padding: 0;
    }
 }

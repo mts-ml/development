@@ -78,8 +78,12 @@
   .features {
     padding-inline: 3rem;
   }
+  .questions__description {
+    padding-inline: 10.625rem;
+    margin-block-end: 3.125rem;
+  }
   .question {
-    margin-block: 1.875rem;
+    padding-inline: 9.375rem;
   }
   .question__first-hr {
     margin-inline: auto;
@@ -92,9 +96,15 @@
     height: 1px;
     margin-block: 1.5625rem;
   }
+  .contact {
+    padding-inline: 10.625rem;
+  }
 }
 @media screen and (min-width: 56.25rem) {
   body {
+    margin-inline: auto;
+  }
+  .header, main {
     width: 55rem;
     margin-inline: auto;
   }
@@ -176,16 +186,39 @@
   .card:last-child {
     transform: translateY(20%);
   }
-  .questions__description {
-    padding-inline: 10.625rem;
-    margin-block-end: 3.125rem;
+  .contact__description {
+    margin-block-end: 1.875rem;
   }
-  .question {
-    padding-inline: 9.375rem;
+  .contact {
+    padding-block-end: 4.375rem;
+  }
+  .contact__title {
+    font-size: 2rem;
+    margin-block-end: 2.5rem;
+  }
+  .contact__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact__email {
+    width: 300px;
+  }
+  .contact__error-img.active {
+    right: 150px;
+  }
+  .contact__button {
+    margin-inline-start: 0.625rem;
+    margin-block-start: 0;
+    width: 121px;
+  }
+  .error {
+    width: 300px;
+    bottom: -15px;
   }
 }
 @media screen and (min-width: 75rem) {
-  body {
+  .header, .main {
     width: 65rem;
     margin-inline: auto;
   }
@@ -199,11 +232,47 @@
   .features__link.selected::after {
     width: 250px;
   }
+  .extensions {
+    padding-inline: 5.625rem;
+  }
+  .extensions__description {
+    width: 50ch;
+    margin-inline: auto;
+  }
   .questions__title {
+    padding-block-start: 5rem;
     font-size: 2.0625rem;
   }
   .questions__description {
     font-size: 1.125rem;
+    margin-inline: auto;
+    width: 75ch;
+  }
+  .question {
+    padding-inline: 11.25rem;
+  }
+  .footer {
+    height: 6.25rem;
+  }
+  .footer__wrapper {
+    width: 65rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__links {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 3rem;
+    padding: 0;
   }
 }
 
