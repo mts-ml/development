@@ -39,7 +39,11 @@
     border-bottom: none;
     padding: 0;
   }
+  .header__wrapper {
+    gap: 3rem;
+  }
   .header__link {
+    font-size: 0.75rem;
     color: black;
     transition: color 150ms ease-in-out;
   }
@@ -158,9 +162,10 @@
     height: 350px;
   }
   .section__info {
-    align-self: center;
+    height: 100px;
   }
   .section__title {
+    margin-block-start: 3.125rem;
     text-align: left;
   }
   .section__description {
@@ -170,7 +175,7 @@
     display: block;
     position: absolute;
     right: 320px;
-    bottom: 0;
+    bottom: 50px;
   }
   .extensions__wrapper {
     display: grid;
@@ -231,6 +236,9 @@
   }
   .features__link.selected::after {
     width: 250px;
+  }
+  .btn__link--section {
+    right: 400px;
   }
   .extensions {
     padding-inline: 5.625rem;

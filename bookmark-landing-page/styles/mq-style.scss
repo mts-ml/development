@@ -52,7 +52,12 @@
       }
    }
 
+   .header__wrapper {
+      gap: 3rem;
+   }
+
    .header__link {
+      font-size: px-to-rem(12);
       color: black;
       transition: color 150ms ease-in-out;
 
@@ -204,23 +209,24 @@
    }
 
    .section__info {
-      align-self: center;
+      height: 100px;
    }
 
    .section__title {
+      margin-block-start: px-to-rem(50);
       text-align: left;
+
    }
 
    .section__description {
       text-align: left;
-      // margin-block-end: 0;
    }
 
    .btn__link--section {
       display: block;
       position: absolute;
       right: 320px;
-      bottom: 0;
+      bottom: 50px;
    }
 
    .extensions__wrapper {
@@ -300,6 +306,10 @@
 
    .features__link.selected::after {
       width: 250px;
+   }
+
+   .btn__link--section {
+      right: 400px;
    }
 
    .extensions {
