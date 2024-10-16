@@ -250,35 +250,119 @@ $Very-Dark-Blue: hsl(229, 31%, 21%);
    }
 }
 
+
 .hero__container {
    position: relative;
    overflow: hidden;
    margin-block-end: px-to-rem(50);
    height: auto;
+
+   &::before {
+      content: '';
+      position: absolute;
+      top: 57px;
+      right: -149px;
+      width: 100%;
+      height: 100%;
+      background-color: $Soft-Blue;
+      z-index: -1;
+   }
+
+   &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 45px;
+      width: 200px;
+      height: 200px;
+      background-color: $Soft-Blue;
+      border-radius: 50%;
+      z-index: -1;
+
+   }
+
+   // 500PX---
+   &::before {
+      @media screen and (min-width: px-to-rem(500)) {
+         top: 90px;
+         right: -208px;
+      }
+   }
+
+   &::after {
+      @media screen and (min-width: px-to-rem(500)) {
+         left: 101px;
+      }
+   }
+
+   // 768PX---
+   &::before {
+      @media screen and (min-width: px-to-rem(768)) {
+         top: 130px;
+         right: -268px;
+      }
+   }
+
+   &::after {
+      @media screen and (min-width: px-to-rem(768)) {
+         left: 163px;
+      }
+   }
+
+   // 900PX---
+   &::before {
+      @media screen and (min-width: px-to-rem(900)) {
+         top: 95px;
+         height: 240px;
+         right: -227px;
+      }
+   }
+
+   &::after {
+      @media screen and (min-width: px-to-rem(900)) {
+         bottom: 97px;
+         left: 134px;
+         width: 150px;
+         height: 122px;
+         border-radius: 40px 0 10px 180px;
+      }
+   }
+
+   // 1200px
+   &::before {
+      @media screen and (min-width: px-to-rem(1200)) {
+         top: 117px;
+         height: 281px;
+         right: -227px;
+         right: 0;
+         left: 227px;
+         width: 10000px;
+      }
+   }
+
+   &::after {
+      @media screen and (min-width: px-to-rem(1200)) {
+         bottom: -24px;
+      }
+   }
+}
+
+body {
+   @media screen and (min-width: px-to-rem(900)) {
+      overflow-x: hidden;
+   }
+}
+
+.hero__container {
+   @media screen and (min-width: px-to-rem(900)) {
+      overflow: visible;
+   }
 }
 
 .hero__img {
    width: 100%;
    height: auto;
 }
-
-// .hero__bg {
-//    position: absolute;
-//    top: 55px;
-//    right: -44px;
-//    width: 100%;
-//    background-color: $Soft-Blue;
-//    height: 100%;
-//    border-radius: 0 0 0 60%;
-//    z-index: -1;
-// }
-
-// .hero__bg {
-//    @media screen and (min-width: px-to-rem(450)) {
-//       top: 76px;
-//       right: -79px
-//    }
-// }
 
 .hero__info {
    padding-inline: px-to-rem(30);
@@ -371,33 +455,112 @@ $Very-Dark-Blue: hsl(229, 31%, 21%);
 
 .section {
    display: none;
-
 }
 
 .section.active {
    display: block;
    margin-block-end: px-to-rem(150);
+}
 
+.section__img-wrapper {
+   position: relative;
+
+   &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 107%;
+      left: -35px;
+      top: 27px;
+      background-color: $Soft-Blue;
+      z-index: -1;
+      border-radius: 0 0 100px 0;
+   }
+
+   &::after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      right: 0;
+      top: 0;
+      background-color: white;
+      z-index: -1;
+   }
+
+   // 500px
+   &::before {
+      @media screen and (min-width: px-to-rem(500)) {
+         left: -80px;
+         top: 46px;
+         height: 100%;
+      }
+   }
+
+   &::after {
+      @media screen and (min-width: px-to-rem(500)) {
+         width: 350px;
+         height: 200px;
+      }
+   }
+
+   // 768px
+   &::before {
+      @media screen and (min-width: px-to-rem(768)) {
+         left: -110px;
+         top: 71px;
+         height: 95%;
+      }
+   }
+
+   &::after {
+      @media screen and (min-width: px-to-rem(768)) {
+         width: 350px;
+         height: 350px;
+      }
+   }
+
+   // 900px
+   &::before {
+      @media screen and (min-width: px-to-rem(900)) {
+         left: -390px;
+         top: 54px;
+         height: 70%;
+         width: 700px;
+      }
+   }
+
+   &::after {
+      @media screen and (min-width: px-to-rem(900)) {
+         width: 150px;
+         height: 150px;
+      }
+   }
+
+   &::before {
+      @media screen and (min-width: px-to-rem(1200)) {
+         left: -2627px;
+         top: 67px;
+         height: 83%;
+         width: 3000px;
+      }
+   }
+}
+
+.section__img-wrapper {
+   @media screen and (min-width: px-to-rem(900)) {
+      overflow: visible;
+   }
 }
 
 .section__img {
    width: 100%;
-   // height: 100%;
    margin-inline: auto;
-   margin-block-end: px-to-rem(50);
 }
 
-// .section__bg {
-//    position: absolute;
-//    bottom: 0;
-//    left: 0;
-//    right: 50%;
-//    width: 100%;
-//    background-color: $Soft-Blue;
-//    height: 200px;
-//    border-radius: 0 0 60% 0;
-//    z-index: -1;
-// }
+.section__title {
+   margin-block-start: px-to-rem(100);
+}
 
 .btn__link--section {
    display: none;
