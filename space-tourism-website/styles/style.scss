@@ -120,8 +120,9 @@ body {
 }
 
 .header__list {
-   
+
 }
+
 
 @media (max-width: px-to-rem(600)) {
    .btn {
@@ -172,6 +173,20 @@ body {
    @supports (backdrop-filter: blur(1.5rem)) {
       .header__list {
          backdrop-filter: blur(1.5rem)
+      }
+   }
+
+   .header__link {
+      position: relative;
+      display: inline-block;
+
+      &::after {
+         position: absolute;
+         content: '';
+         height: 2px;
+         width: 35px;
+         transform: rotate(90deg);
+         background-color: $white;
       }
    }
 }

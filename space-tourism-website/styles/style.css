@@ -138,6 +138,18 @@ body {
       backdrop-filter: blur(1.5rem);
     }
   }
+  .header__link {
+    position: relative;
+    display: inline-block;
+  }
+  .header__link::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 35px;
+    transform: rotate(90deg);
+    background-color: hsl(0, 0%, 100%);
+  }
 }
 .header__link {
   text-decoration: none;
