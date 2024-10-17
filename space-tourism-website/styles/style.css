@@ -1,0 +1,195 @@
+/* bellefair-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/bellefair-v14-latin-regular.woff2") format("woff2");
+}
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/barlow-v12-latin-regular.woff2") format("woff2");
+}
+/* barlow-condensed-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/barlow-condensed-v12-latin-regular.woff2") format("woff2");
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+body {
+  font-family: "Barlow", "sans-serif";
+  background: url("../assets/home/background-home-mobile.jpg") no-repeat;
+  background-size: cover;
+}
+
+.header {
+  height: 5rem;
+  padding: 1.5rem;
+}
+
+.header__logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.btn {
+  display: none;
+}
+
+@media (max-width: 37.5rem) {
+  .btn {
+    display: block;
+    position: fixed;
+    right: 1.5rem;
+    top: 2.09375rem;
+    background: transparent;
+    width: 1.5rem;
+    height: 1.3125rem;
+    background: url("../assets/shared/icon-hamburger.svg") no-repeat;
+    border: 0;
+    transition: transform 400ms ease-in-out;
+    z-index: 1;
+    transition: background 500ms ease-in-out;
+  }
+  .btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 400ms ease-in-out;
+  }
+  .btn[aria-expanded=true] {
+    background: url("../assets/shared/icon-close.svg") no-repeat;
+    transition: background 500ms ease-in-out;
+  }
+  .header__list {
+    position: fixed;
+    inset: 0 0 0 32%;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100%;
+    padding: 8.3125rem 0 0 2rem;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 600ms ease-in-out;
+  }
+  .header__list[data-visible=true] {
+    transform: translateX(0);
+    transition: transform 600ms ease-in-out;
+  }
+  @supports (backdrop-filter: blur(1.5rem)) {
+    .header__list {
+      backdrop-filter: blur(1.5rem);
+    }
+  }
+}
+.header__link {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+}
+
+.header__bold {
+  margin-inline-end: 0.75rem;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 1.5rem;
+  color: hsl(231, 77%, 90%);
+  text-align: center;
+}
+
+.hero__span {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 0.659rem + 1.455vw, 1.75rem);
+}
+
+.hero__title {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  font-size: clamp(5rem, 3.182rem + 7.758vw, 9rem);
+  font-weight: 400;
+  margin-block-start: 1.5rem;
+}
+
+.hero__description {
+  margin-block-start: 9.25rem;
+  font-size: clamp(0.938rem, 0.852rem + 0.364vw, 1.125rem);
+  line-height: 180%;
+}
+
+.hero__explore-div {
+  margin: 3.5625rem 5.71875rem;
+  background-color: hsl(0, 0%, 100%);
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.hero__explore {
+  font-size: clamp(1.125rem, 0.727rem + 1.697vw, 2rem);
+  color: black;
+  text-transform: uppercase;
+  font-family: "Bellefair", "serif";
+}
+
+/*# sourceMappingURL=style.css.map */
