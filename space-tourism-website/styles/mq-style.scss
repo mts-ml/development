@@ -1,0 +1,117 @@
+@function px-to-rem($px-value) {
+   @return $px-value / 16 * 1rem
+}
+
+@media (min-width: px-to-rem(768)) {
+
+   body {
+      background: url('../assets/home/background-home-tablet.jpg') no-repeat;
+      background-size: cover;
+   }
+
+   .header {
+      height: px-to-rem(96);
+      padding-inline: px-to-rem(40);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .header__logo {
+      width: px-to-rem(48);
+      height: px-to-rem(48);
+   }
+
+   .header__list {
+      padding-inline-start: px-to-rem(90);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      background-color: rgba(255, 255, 255, .1);
+      height: px-to-rem(96);
+      width: 120%;
+   }
+
+   @supports (backdrop-filter: blur(2.5rem)) {
+      .header__list {
+         backdrop-filter: blur(1.5rem);
+      }
+   }
+
+   .header__link {
+
+      &::after {
+         bottom: px-to-rem(-38.5);
+      }
+   }
+
+   .hero {
+      padding: px-to-rem(128) px-to-rem(40);
+   }
+
+   .hero__description {
+      width: px-to-rem(512);
+      margin-inline: auto;
+      margin-block-start: px-to-rem(24);
+   }
+
+   .hero__explore-div {
+      width: px-to-rem(272);
+      height: px-to-rem(272);
+
+      &::after {
+         width: 135%;
+         height: 135%;
+      }
+   }
+
+}
+
+@media (min-width: 75rem) {
+
+   body {
+      background: url('../assets/home/background-home-desktop.jpg') no-repeat;
+      background-size: cover;
+   }
+
+   .header {
+      padding: px-to-rem(64) px-to-rem(64) px-to-rem(24);
+   }
+
+   .header__list {
+      position: relative;
+
+      &::after {
+         content: '';
+         color: white;
+         position: absolute;
+         left: -430px;
+         top: 47px;
+         width: 70%;
+         height: 1px;
+         background-color: white;
+      }
+   }
+
+   .hero {
+      margin: px-to-rem(128) px-to-rem(165);
+      padding: 0;
+      width: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      height: px-to-rem(632);
+      align-items: end;
+      text-align: left;
+      justify-items: center;
+      gap: 17rem;
+   }
+
+   .hero__description {
+      margin-inline: 0;
+   }
+
+   .hero__explore-div {
+      margin-block-end: px-to-rem(35.5);
+   }
+}

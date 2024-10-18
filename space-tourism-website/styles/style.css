@@ -74,6 +74,7 @@ select {
 
 body {
   min-height: 100vh;
+  overflow: hidden;
   font-family: "Barlow", "sans-serif";
   background: url("../assets/home/background-home-mobile.jpg") no-repeat;
   background-size: cover;
@@ -99,11 +100,12 @@ body {
 
 .header__link {
   position: relative;
+  opacity: 0.8;
   display: inline-block;
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
-  font-size: clamp(1rem, 0.659rem + 1.455vi, 1.75rem);
+  font-size: 1rem;
 }
 .header__link::after {
   position: absolute;
@@ -120,19 +122,19 @@ body {
   transition: width 400ms ease-in-out;
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 48rem) {
   .btn {
     display: block;
     position: fixed;
-    right: 1.5rem;
-    top: 2.09375rem;
+    right: 24px;
+    top: 33.5px;
     background: transparent;
     width: 1.5rem;
     height: 1.3125rem;
     background: url("../assets/shared/icon-hamburger.svg") no-repeat;
     border: 0;
     transition: transform 400ms ease-in-out;
-    z-index: 1;
+    z-index: 2;
     transition: background 500ms ease-in-out;
   }
   .btn:hover {
@@ -147,8 +149,8 @@ body {
   .header__list {
     position: fixed;
     inset: 0 0 0 32%;
-    background-color: rgba(255, 255, 255, 0.1);
     height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 8.3125rem 0 0 2rem;
     list-style-type: none;
     display: flex;
@@ -156,6 +158,7 @@ body {
     gap: 2rem;
     transform: translateX(100%);
     transition: transform 600ms ease-in-out;
+    z-index: 1;
   }
   .header__list[data-visible=true] {
     transform: translateX(0);
@@ -179,27 +182,30 @@ body {
 }
 
 .hero__span {
+  opacity: 0.9;
   text-transform: uppercase;
-  font-size: clamp(1rem, 0.659rem + 1.455vw, 1.75rem);
+  font-size: clamp(1rem, 0.736rem + 1.127vi, 1.75rem);
 }
 
 .hero__title {
   text-transform: uppercase;
   color: hsl(0, 0%, 100%);
-  font-size: clamp(5rem, 3.182rem + 7.758vw, 9rem);
+  font-size: clamp(5rem, 3.592rem + 6.009vi, 9rem);
   font-weight: 400;
   margin-block-start: 1.5rem;
 }
 
 .hero__description {
+  max-width: 25rem;
+  margin-inline: auto;
+  opacity: 0.8;
   margin-block-start: 9.25rem;
-  font-size: clamp(0.938rem, 0.852rem + 0.364vw, 1.125rem);
+  font-size: 1rem;
   line-height: 180%;
 }
 
 .hero__explore-div {
   position: relative;
-  z-index: -1;
   margin: 3.5625rem auto;
   background-color: hsl(0, 0%, 100%);
   width: 9rem;
