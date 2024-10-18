@@ -73,6 +73,7 @@ select {
 }
 
 body {
+  min-height: 100vh;
   font-family: "Barlow", "sans-serif";
   background: url("../assets/home/background-home-mobile.jpg") no-repeat;
   background-size: cover;
@@ -83,6 +84,10 @@ body {
   padding: 1.5rem;
 }
 
+.header__logo-link {
+  display: inline-block;
+}
+
 .header__logo {
   width: 2.5rem;
   height: 2.5rem;
@@ -90,6 +95,29 @@ body {
 
 .btn {
   display: none;
+}
+
+.header__link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-size: clamp(1rem, 0.659rem + 1.455vi, 1.75rem);
+}
+.header__link::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  left: 0;
+  bottom: -15px;
+  width: 0;
+  background-color: hsl(0, 0%, 100%);
+  transition: width 400ms ease-in-out;
+}
+.header__link:hover::after {
+  width: 100%;
+  transition: width 400ms ease-in-out;
 }
 
 @media (max-width: 37.5rem) {
@@ -138,25 +166,7 @@ body {
       backdrop-filter: blur(1.5rem);
     }
   }
-  .header__link {
-    position: relative;
-    display: inline-block;
-  }
-  .header__link::after {
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 35px;
-    transform: rotate(90deg);
-    background-color: hsl(0, 0%, 100%);
-  }
 }
-.header__link {
-  text-decoration: none;
-  color: hsl(0, 0%, 100%);
-  text-transform: uppercase;
-}
-
 .header__bold {
   margin-inline-end: 0.75rem;
   font-weight: bold;
@@ -188,7 +198,9 @@ body {
 }
 
 .hero__explore-div {
-  margin: 3.5625rem 5.71875rem;
+  position: relative;
+  z-index: -1;
+  margin: 3.5625rem auto;
   background-color: hsl(0, 0%, 100%);
   width: 9rem;
   height: 9rem;
@@ -196,12 +208,35 @@ body {
   display: grid;
   place-items: center;
 }
+.hero__explore-div::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 160%;
+  height: 160%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+  pointer-events: none;
+}
+.hero__explore-div:hover::after {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out;
+}
 
 .hero__explore {
+  text-decoration: none;
   font-size: clamp(1.125rem, 0.727rem + 1.697vw, 2rem);
   color: black;
   text-transform: uppercase;
   font-family: "Bellefair", "serif";
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
