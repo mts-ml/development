@@ -15,3 +15,15 @@ hamburguerButton.addEventListener('click', () => {
 
    }
 })
+
+function checkViewportSize() {
+   if (window.matchMedia('(min-width: 48rem)').matches) {
+      navMenu.style.transition = 'none'
+      navMenu.setAttribute('data-visible', 'false')
+      hamburguerButton.setAttribute('aria-expanded', 'false')
+   } else {
+      navMenu.style.transition = ''
+   }
+}
+checkViewportSize()
+window.addEventListener('resize', checkViewportSize);
